@@ -1,0 +1,4594 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_469f90db77b74e198417c6dc4bc0cb7e {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_469f90db77b74e198417c6dc4bc0cb7e" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_469f90db77b74e198417c6dc4bc0cb7e = L.map(
+        'map_469f90db77b74e198417c6dc4bc0cb7e', {
+        center: [39.95, -75.18],
+        zoom: 13,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_db8b22978da34b709e2d028b8a5ba24a = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_469f90db77b74e198417c6dc4bc0cb7e);
+    
+            var marker_cluster_a8ecbab333bb49c993e6958afb98d101 = L.markerClusterGroup({});
+            map_469f90db77b74e198417c6dc4bc0cb7e.addLayer(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+            
+    
+        var marker_6a5011eba4cd49b9a73e4411cc30177b = L.marker(
+            [39.95378, -75.16374],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_e4be31bcbc2640f6ae9b589333e35b5e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6a5011eba4cd49b9a73e4411cc30177b.setIcon(icon_e4be31bcbc2640f6ae9b589333e35b5e);
+            
+    
+            var popup_b718ea58b4874b7c98c0dd14b7893473 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_432a1f2566cc402aa2e7db118855736d = $(`<div id="html_432a1f2566cc402aa2e7db118855736d" style="width: 100.0%; height: 100.0%;">Available Bikes: 3</div>`)[0];
+                popup_b718ea58b4874b7c98c0dd14b7893473.setContent(html_432a1f2566cc402aa2e7db118855736d);
+            
+
+            marker_6a5011eba4cd49b9a73e4411cc30177b.bindPopup(popup_b718ea58b4874b7c98c0dd14b7893473)
+            ;
+
+            
+        
+    
+        var marker_cae0e6b96f3f4e8b8c775dc1437d33fa = L.marker(
+            [39.94733, -75.14403],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_1e057f8de38b4b6dbc00f6c27795b4e8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cae0e6b96f3f4e8b8c775dc1437d33fa.setIcon(icon_1e057f8de38b4b6dbc00f6c27795b4e8);
+            
+    
+            var popup_28db18b898c84a97919f251bb40d3bf0 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_dc11a625f1914960b65620a74fedf0b3 = $(`<div id="html_dc11a625f1914960b65620a74fedf0b3" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_28db18b898c84a97919f251bb40d3bf0.setContent(html_dc11a625f1914960b65620a74fedf0b3);
+            
+
+            marker_cae0e6b96f3f4e8b8c775dc1437d33fa.bindPopup(popup_28db18b898c84a97919f251bb40d3bf0)
+            ;
+
+            
+        
+    
+        var marker_cc2baf07ca594c9bb0e771f37746df63 = L.marker(
+            [39.9522, -75.20311],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_7cbfd8b731994b91bfb24ea064f04891 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cc2baf07ca594c9bb0e771f37746df63.setIcon(icon_7cbfd8b731994b91bfb24ea064f04891);
+            
+    
+            var popup_210ad2b4792949fcbf110de35c9b3a4c = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_c42307ccb229471f99d6dc7277f6eacc = $(`<div id="html_c42307ccb229471f99d6dc7277f6eacc" style="width: 100.0%; height: 100.0%;">Available Bikes: 2</div>`)[0];
+                popup_210ad2b4792949fcbf110de35c9b3a4c.setContent(html_c42307ccb229471f99d6dc7277f6eacc);
+            
+
+            marker_cc2baf07ca594c9bb0e771f37746df63.bindPopup(popup_210ad2b4792949fcbf110de35c9b3a4c)
+            ;
+
+            
+        
+    
+        var marker_6a609635d0db45f888b26d70726da534 = L.marker(
+            [39.94517, -75.15993],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_aea153e65219447f91dacb2f4b4a6302 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6a609635d0db45f888b26d70726da534.setIcon(icon_aea153e65219447f91dacb2f4b4a6302);
+            
+    
+            var popup_65d4f0060acf40f6a308159cf791f538 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_48b01c006f864056811ddf9179d17adf = $(`<div id="html_48b01c006f864056811ddf9179d17adf" style="width: 100.0%; height: 100.0%;">Available Bikes: 15</div>`)[0];
+                popup_65d4f0060acf40f6a308159cf791f538.setContent(html_48b01c006f864056811ddf9179d17adf);
+            
+
+            marker_6a609635d0db45f888b26d70726da534.bindPopup(popup_65d4f0060acf40f6a308159cf791f538)
+            ;
+
+            
+        
+    
+        var marker_aa2ed527a2714ab698672e9f3726ed3c = L.marker(
+            [39.98078, -75.15055],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_825ea157de8c4b049d7a973580dda8ef = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aa2ed527a2714ab698672e9f3726ed3c.setIcon(icon_825ea157de8c4b049d7a973580dda8ef);
+            
+    
+            var popup_7f37409843034cd9bbbb330698aeb82d = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_49c2e1b7033e4b2697acb8ff9acc7332 = $(`<div id="html_49c2e1b7033e4b2697acb8ff9acc7332" style="width: 100.0%; height: 100.0%;">Available Bikes: 5</div>`)[0];
+                popup_7f37409843034cd9bbbb330698aeb82d.setContent(html_49c2e1b7033e4b2697acb8ff9acc7332);
+            
+
+            marker_aa2ed527a2714ab698672e9f3726ed3c.bindPopup(popup_7f37409843034cd9bbbb330698aeb82d)
+            ;
+
+            
+        
+    
+        var marker_c98ff0e59fad476cb23dcda8ba9f8f00 = L.marker(
+            [39.95576, -75.18982],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_e66e7ac9037f4c8f9bd6d056136cdb21 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c98ff0e59fad476cb23dcda8ba9f8f00.setIcon(icon_e66e7ac9037f4c8f9bd6d056136cdb21);
+            
+    
+            var popup_cffd22183f9442518909a3a19a7335e0 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_8a61c0b1171145aab2a25dbdc98d849d = $(`<div id="html_8a61c0b1171145aab2a25dbdc98d849d" style="width: 100.0%; height: 100.0%;">Available Bikes: 3</div>`)[0];
+                popup_cffd22183f9442518909a3a19a7335e0.setContent(html_8a61c0b1171145aab2a25dbdc98d849d);
+            
+
+            marker_c98ff0e59fad476cb23dcda8ba9f8f00.bindPopup(popup_cffd22183f9442518909a3a19a7335e0)
+            ;
+
+            
+        
+    
+        var marker_9b5135f2ffa843249c23411401d21c4c = L.marker(
+            [39.94711, -75.16618],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_539da211aa3d429fb65315f3e919df84 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9b5135f2ffa843249c23411401d21c4c.setIcon(icon_539da211aa3d429fb65315f3e919df84);
+            
+    
+            var popup_e7aa5e286ed74393ade79ca90e98c2e6 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_0a84d3dc90084801989194e5a2723ce1 = $(`<div id="html_0a84d3dc90084801989194e5a2723ce1" style="width: 100.0%; height: 100.0%;">Available Bikes: 0</div>`)[0];
+                popup_e7aa5e286ed74393ade79ca90e98c2e6.setContent(html_0a84d3dc90084801989194e5a2723ce1);
+            
+
+            marker_9b5135f2ffa843249c23411401d21c4c.bindPopup(popup_e7aa5e286ed74393ade79ca90e98c2e6)
+            ;
+
+            
+        
+    
+        var marker_cccb8cb1db5748f4a1b6126a6483292b = L.marker(
+            [39.95949, -75.1969],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_ebfc2ef3951b40f7881824af98d0f045 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cccb8cb1db5748f4a1b6126a6483292b.setIcon(icon_ebfc2ef3951b40f7881824af98d0f045);
+            
+    
+            var popup_8d212bb05d3a4a57a62439aee9c74393 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_11d00dc0bc994426b90f4465a1acaef2 = $(`<div id="html_11d00dc0bc994426b90f4465a1acaef2" style="width: 100.0%; height: 100.0%;">Available Bikes: 1</div>`)[0];
+                popup_8d212bb05d3a4a57a62439aee9c74393.setContent(html_11d00dc0bc994426b90f4465a1acaef2);
+            
+
+            marker_cccb8cb1db5748f4a1b6126a6483292b.bindPopup(popup_8d212bb05d3a4a57a62439aee9c74393)
+            ;
+
+            
+        
+    
+        var marker_bbdabb7c72344fc0bb2e51ef41cf4837 = L.marker(
+            [39.94218, -75.17747],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_019a96d86c5d45f59a8f532d156a8d69 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bbdabb7c72344fc0bb2e51ef41cf4837.setIcon(icon_019a96d86c5d45f59a8f532d156a8d69);
+            
+    
+            var popup_f0ce4a9b956c465eafa2542a95d23005 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_6450df31b2db430fad6140f5b6e2f177 = $(`<div id="html_6450df31b2db430fad6140f5b6e2f177" style="width: 100.0%; height: 100.0%;">Available Bikes: 17</div>`)[0];
+                popup_f0ce4a9b956c465eafa2542a95d23005.setContent(html_6450df31b2db430fad6140f5b6e2f177);
+            
+
+            marker_bbdabb7c72344fc0bb2e51ef41cf4837.bindPopup(popup_f0ce4a9b956c465eafa2542a95d23005)
+            ;
+
+            
+        
+    
+        var marker_b486f3b95f104932a3685a42f276fdf3 = L.marker(
+            [39.96317, -75.14792],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_9e78c3f6a25b49cbbfd390f4adb24d48 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b486f3b95f104932a3685a42f276fdf3.setIcon(icon_9e78c3f6a25b49cbbfd390f4adb24d48);
+            
+    
+            var popup_df5df042f40d4a34ba37365cb5d6c81a = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_3e6c480ca78a4545bf0edac71f6348b7 = $(`<div id="html_3e6c480ca78a4545bf0edac71f6348b7" style="width: 100.0%; height: 100.0%;">Available Bikes: 8</div>`)[0];
+                popup_df5df042f40d4a34ba37365cb5d6c81a.setContent(html_3e6c480ca78a4545bf0edac71f6348b7);
+            
+
+            marker_b486f3b95f104932a3685a42f276fdf3.bindPopup(popup_df5df042f40d4a34ba37365cb5d6c81a)
+            ;
+
+            
+        
+    
+        var marker_e0d68012701442b4940b6dc95383be48 = L.marker(
+            [39.95886, -75.17369],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_96d2f6a3839e48baae6a86223e865a5a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e0d68012701442b4940b6dc95383be48.setIcon(icon_96d2f6a3839e48baae6a86223e865a5a);
+            
+    
+            var popup_2370852713aa40b0a139a9beb24ef569 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_7134e10487ee4cfa9408bbf94efbf7c8 = $(`<div id="html_7134e10487ee4cfa9408bbf94efbf7c8" style="width: 100.0%; height: 100.0%;">Available Bikes: 7</div>`)[0];
+                popup_2370852713aa40b0a139a9beb24ef569.setContent(html_7134e10487ee4cfa9408bbf94efbf7c8);
+            
+
+            marker_e0d68012701442b4940b6dc95383be48.bindPopup(popup_2370852713aa40b0a139a9beb24ef569)
+            ;
+
+            
+        
+    
+        var marker_8b45f5e6bfc04a139e1dac8f5853f2c4 = L.marker(
+            [39.94735, -75.14886],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_7fb4d01f4f994d50824bfc0c7d4b6bdf = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8b45f5e6bfc04a139e1dac8f5853f2c4.setIcon(icon_7fb4d01f4f994d50824bfc0c7d4b6bdf);
+            
+    
+            var popup_7a8d09fee87b43859b15969c7a95510e = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_57bec6b9aeb7476c9ca198422fe28e8c = $(`<div id="html_57bec6b9aeb7476c9ca198422fe28e8c" style="width: 100.0%; height: 100.0%;">Available Bikes: 6</div>`)[0];
+                popup_7a8d09fee87b43859b15969c7a95510e.setContent(html_57bec6b9aeb7476c9ca198422fe28e8c);
+            
+
+            marker_8b45f5e6bfc04a139e1dac8f5853f2c4.bindPopup(popup_7a8d09fee87b43859b15969c7a95510e)
+            ;
+
+            
+        
+    
+        var marker_1eb2d609bf304f26850c9c23bd559674 = L.marker(
+            [39.96892, -75.1547],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_57bb61bd56464127956a42ad5608f831 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1eb2d609bf304f26850c9c23bd559674.setIcon(icon_57bb61bd56464127956a42ad5608f831);
+            
+    
+            var popup_77b1cc134d2b41c8bdc9d82697aff542 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_08ebbccc5ff94a4faccc6f294191b799 = $(`<div id="html_08ebbccc5ff94a4faccc6f294191b799" style="width: 100.0%; height: 100.0%;">Available Bikes: 11</div>`)[0];
+                popup_77b1cc134d2b41c8bdc9d82697aff542.setContent(html_08ebbccc5ff94a4faccc6f294191b799);
+            
+
+            marker_1eb2d609bf304f26850c9c23bd559674.bindPopup(popup_77b1cc134d2b41c8bdc9d82697aff542)
+            ;
+
+            
+        
+    
+        var marker_6101f2aed6544c42a6b3ae2d5e8c0d35 = L.marker(
+            [39.98003, -75.14371],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_6d320c3ddabf4e7cbf1c74bf60cfc7f8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6101f2aed6544c42a6b3ae2d5e8c0d35.setIcon(icon_6d320c3ddabf4e7cbf1c74bf60cfc7f8);
+            
+    
+            var popup_52fc56f20ebc4ab183ae1e41b74dc858 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_2bff64d67e7348b2bc0ca0e0ab587518 = $(`<div id="html_2bff64d67e7348b2bc0ca0e0ab587518" style="width: 100.0%; height: 100.0%;">Available Bikes: 8</div>`)[0];
+                popup_52fc56f20ebc4ab183ae1e41b74dc858.setContent(html_2bff64d67e7348b2bc0ca0e0ab587518);
+            
+
+            marker_6101f2aed6544c42a6b3ae2d5e8c0d35.bindPopup(popup_52fc56f20ebc4ab183ae1e41b74dc858)
+            ;
+
+            
+        
+    
+        var marker_9535b951a3984a3f93d93c167855c63f = L.marker(
+            [39.95273, -75.15979],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_3618c53e8f9044429aad38e5c73c5d02 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9535b951a3984a3f93d93c167855c63f.setIcon(icon_3618c53e8f9044429aad38e5c73c5d02);
+            
+    
+            var popup_e5dba9d6bf14421baae6d2ce5fea9d18 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_50c2ebef845649ad8a1ad65d1114a30e = $(`<div id="html_50c2ebef845649ad8a1ad65d1114a30e" style="width: 100.0%; height: 100.0%;">Available Bikes: 0</div>`)[0];
+                popup_e5dba9d6bf14421baae6d2ce5fea9d18.setContent(html_50c2ebef845649ad8a1ad65d1114a30e);
+            
+
+            marker_9535b951a3984a3f93d93c167855c63f.bindPopup(popup_e5dba9d6bf14421baae6d2ce5fea9d18)
+            ;
+
+            
+        
+    
+        var marker_9605afb8560745e09da6ff29a7d86f6f = L.marker(
+            [39.95403, -75.14983],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_9ed8027d65ba4c4d8734b191a0ec1fe0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9605afb8560745e09da6ff29a7d86f6f.setIcon(icon_9ed8027d65ba4c4d8734b191a0ec1fe0);
+            
+    
+            var popup_8fad5e2560214cba94fa14c897669868 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_716d383918354378b11d0600f2ea3a2d = $(`<div id="html_716d383918354378b11d0600f2ea3a2d" style="width: 100.0%; height: 100.0%;">Available Bikes: 4</div>`)[0];
+                popup_8fad5e2560214cba94fa14c897669868.setContent(html_716d383918354378b11d0600f2ea3a2d);
+            
+
+            marker_9605afb8560745e09da6ff29a7d86f6f.bindPopup(popup_8fad5e2560214cba94fa14c897669868)
+            ;
+
+            
+        
+    
+        var marker_d4c93adc2a044faa8616bc5150cd7bb0 = L.marker(
+            [39.94922, -75.19036],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_244cb3bf8c3e456b87309fb04b27f275 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d4c93adc2a044faa8616bc5150cd7bb0.setIcon(icon_244cb3bf8c3e456b87309fb04b27f275);
+            
+    
+            var popup_1c195469aa994d39988daf5945bd3872 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_5281c37e73274a6384c12e38b7604da7 = $(`<div id="html_5281c37e73274a6384c12e38b7604da7" style="width: 100.0%; height: 100.0%;">Available Bikes: 3</div>`)[0];
+                popup_1c195469aa994d39988daf5945bd3872.setContent(html_5281c37e73274a6384c12e38b7604da7);
+            
+
+            marker_d4c93adc2a044faa8616bc5150cd7bb0.bindPopup(popup_1c195469aa994d39988daf5945bd3872)
+            ;
+
+            
+        
+    
+        var marker_b629e09ac7934b01b947bc85ecb907d8 = L.marker(
+            [39.9539, -75.16902],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_743fcc19d5634aa6b6cf9cce8513457e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b629e09ac7934b01b947bc85ecb907d8.setIcon(icon_743fcc19d5634aa6b6cf9cce8513457e);
+            
+    
+            var popup_999fdcde97524d8d845d8f4dba37662b = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_f86c896f610e44088548141f245c4093 = $(`<div id="html_f86c896f610e44088548141f245c4093" style="width: 100.0%; height: 100.0%;">Available Bikes: 8</div>`)[0];
+                popup_999fdcde97524d8d845d8f4dba37662b.setContent(html_f86c896f610e44088548141f245c4093);
+            
+
+            marker_b629e09ac7934b01b947bc85ecb907d8.bindPopup(popup_999fdcde97524d8d845d8f4dba37662b)
+            ;
+
+            
+        
+    
+        var marker_58b06ae22cc144b1b5bfdcbfef762c94 = L.marker(
+            [39.95472, -75.18323],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_1d07d391cf36483480bc42fb53d39bd5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_58b06ae22cc144b1b5bfdcbfef762c94.setIcon(icon_1d07d391cf36483480bc42fb53d39bd5);
+            
+    
+            var popup_7f86c7f9c36b446b944767abdd74b8d6 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_0b35137e84cf467395e085c01d668fb4 = $(`<div id="html_0b35137e84cf467395e085c01d668fb4" style="width: 100.0%; height: 100.0%;">Available Bikes: 10</div>`)[0];
+                popup_7f86c7f9c36b446b944767abdd74b8d6.setContent(html_0b35137e84cf467395e085c01d668fb4);
+            
+
+            marker_58b06ae22cc144b1b5bfdcbfef762c94.bindPopup(popup_7f86c7f9c36b446b944767abdd74b8d6)
+            ;
+
+            
+        
+    
+        var marker_257d23a2bbdc4fb6a2699b2a3668e414 = L.marker(
+            [39.94822, -75.20908],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_23a5776688d74b47ac831faf0dc6cbe6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_257d23a2bbdc4fb6a2699b2a3668e414.setIcon(icon_23a5776688d74b47ac831faf0dc6cbe6);
+            
+    
+            var popup_7d276da243014afa9ddeea81a987a95e = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_1f2c04217a824c1e8aa22a5116c12558 = $(`<div id="html_1f2c04217a824c1e8aa22a5116c12558" style="width: 100.0%; height: 100.0%;">Available Bikes: 16</div>`)[0];
+                popup_7d276da243014afa9ddeea81a987a95e.setContent(html_1f2c04217a824c1e8aa22a5116c12558);
+            
+
+            marker_257d23a2bbdc4fb6a2699b2a3668e414.bindPopup(popup_7d276da243014afa9ddeea81a987a95e)
+            ;
+
+            
+        
+    
+        var marker_7601db8ffe4d4ea992e3240044a722ee = L.marker(
+            [39.93724, -75.1612],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_b59483aafb724a1b892ca1fa9899888e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7601db8ffe4d4ea992e3240044a722ee.setIcon(icon_b59483aafb724a1b892ca1fa9899888e);
+            
+    
+            var popup_2bf1c1771454497082ce595801bb3cf9 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_97bba69136724d5d9a1a2a4fe8c729b1 = $(`<div id="html_97bba69136724d5d9a1a2a4fe8c729b1" style="width: 100.0%; height: 100.0%;">Available Bikes: 3</div>`)[0];
+                popup_2bf1c1771454497082ce595801bb3cf9.setContent(html_97bba69136724d5d9a1a2a4fe8c729b1);
+            
+
+            marker_7601db8ffe4d4ea992e3240044a722ee.bindPopup(popup_2bf1c1771454497082ce595801bb3cf9)
+            ;
+
+            
+        
+    
+        var marker_4fc56ebd00774e7686ac8aed243a2d78 = L.marker(
+            [39.94138, -75.14564],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_5828111696fa4b30a4fb23b547692e4a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4fc56ebd00774e7686ac8aed243a2d78.setIcon(icon_5828111696fa4b30a4fb23b547692e4a);
+            
+    
+            var popup_a640ee121a3a4bbe80121613de3ec96a = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_5ba844fc366d4df19a79f0012e371a99 = $(`<div id="html_5ba844fc366d4df19a79f0012e371a99" style="width: 100.0%; height: 100.0%;">Available Bikes: 12</div>`)[0];
+                popup_a640ee121a3a4bbe80121613de3ec96a.setContent(html_5ba844fc366d4df19a79f0012e371a99);
+            
+
+            marker_4fc56ebd00774e7686ac8aed243a2d78.bindPopup(popup_a640ee121a3a4bbe80121613de3ec96a)
+            ;
+
+            
+        
+    
+        var marker_fb88d698b5004bd09d2c832421b26d34 = L.marker(
+            [39.95694, -75.20069],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_9f9e7279bf2846628bd79755a78ffaf9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fb88d698b5004bd09d2c832421b26d34.setIcon(icon_9f9e7279bf2846628bd79755a78ffaf9);
+            
+    
+            var popup_192328d413e14de8aa5f562a805eabed = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_1560a4c7a45b49df857675d1e17c697f = $(`<div id="html_1560a4c7a45b49df857675d1e17c697f" style="width: 100.0%; height: 100.0%;">Available Bikes: 1</div>`)[0];
+                popup_192328d413e14de8aa5f562a805eabed.setContent(html_1560a4c7a45b49df857675d1e17c697f);
+            
+
+            marker_fb88d698b5004bd09d2c832421b26d34.bindPopup(popup_192328d413e14de8aa5f562a805eabed)
+            ;
+
+            
+        
+    
+        var marker_44cd996c6e0c47df90a8a98dcfda2b64 = L.marker(
+            [39.94061, -75.14958],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_9806e8762e224ef897a0d11dee051ff0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_44cd996c6e0c47df90a8a98dcfda2b64.setIcon(icon_9806e8762e224ef897a0d11dee051ff0);
+            
+    
+            var popup_2e9a2ea0db9f4cdb97beba96f14bbebc = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_81cb7a12a9634389b5d03679512e7ad6 = $(`<div id="html_81cb7a12a9634389b5d03679512e7ad6" style="width: 100.0%; height: 100.0%;">Available Bikes: 8</div>`)[0];
+                popup_2e9a2ea0db9f4cdb97beba96f14bbebc.setContent(html_81cb7a12a9634389b5d03679512e7ad6);
+            
+
+            marker_44cd996c6e0c47df90a8a98dcfda2b64.bindPopup(popup_2e9a2ea0db9f4cdb97beba96f14bbebc)
+            ;
+
+            
+        
+    
+        var marker_1894e5e71a9a44989371e01f16e62b08 = L.marker(
+            [39.9538, -75.19479],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_b4d94c6e551843fcb593bf5eddc08448 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1894e5e71a9a44989371e01f16e62b08.setIcon(icon_b4d94c6e551843fcb593bf5eddc08448);
+            
+    
+            var popup_e1d4befdc60548aa83831f7611f0d41c = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_acbb42ff45cd487d8b39816bded38bac = $(`<div id="html_acbb42ff45cd487d8b39816bded38bac" style="width: 100.0%; height: 100.0%;">Available Bikes: 0</div>`)[0];
+                popup_e1d4befdc60548aa83831f7611f0d41c.setContent(html_acbb42ff45cd487d8b39816bded38bac);
+            
+
+            marker_1894e5e71a9a44989371e01f16e62b08.bindPopup(popup_e1d4befdc60548aa83831f7611f0d41c)
+            ;
+
+            
+        
+    
+        var marker_bdc78ca24fe5476a9e96c404a21589e1 = L.marker(
+            [39.93935, -75.15716],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_664b176d02984f24a477bb62805b4b0b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bdc78ca24fe5476a9e96c404a21589e1.setIcon(icon_664b176d02984f24a477bb62805b4b0b);
+            
+    
+            var popup_72682fdcaf144f42af8381f65b6eb728 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_da0874481c5d479ab794a7e6625cde36 = $(`<div id="html_da0874481c5d479ab794a7e6625cde36" style="width: 100.0%; height: 100.0%;">Available Bikes: 5</div>`)[0];
+                popup_72682fdcaf144f42af8381f65b6eb728.setContent(html_da0874481c5d479ab794a7e6625cde36);
+            
+
+            marker_bdc78ca24fe5476a9e96c404a21589e1.bindPopup(popup_72682fdcaf144f42af8381f65b6eb728)
+            ;
+
+            
+        
+    
+        var marker_eed2f9633134486196e0b82c8056ae01 = L.marker(
+            [39.98005, -75.15522],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_3b2431e38a2d4d5fa68dc8178a5cde3b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eed2f9633134486196e0b82c8056ae01.setIcon(icon_3b2431e38a2d4d5fa68dc8178a5cde3b);
+            
+    
+            var popup_766813b8c23043689ad03b9700b41131 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_f336891ed9c542daa0cc19a9ecd43741 = $(`<div id="html_f336891ed9c542daa0cc19a9ecd43741" style="width: 100.0%; height: 100.0%;">Available Bikes: 0</div>`)[0];
+                popup_766813b8c23043689ad03b9700b41131.setContent(html_f336891ed9c542daa0cc19a9ecd43741);
+            
+
+            marker_eed2f9633134486196e0b82c8056ae01.bindPopup(popup_766813b8c23043689ad03b9700b41131)
+            ;
+
+            
+        
+    
+        var marker_7f2339c97c574bcdb2e1121675dd7c74 = L.marker(
+            [39.94527, -75.17971],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_f03e906526ac4080ad3200c18af57b3e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7f2339c97c574bcdb2e1121675dd7c74.setIcon(icon_f03e906526ac4080ad3200c18af57b3e);
+            
+    
+            var popup_5d9d721cdfd9422fa3107c54a92c6743 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_8d1b68aef186468a80a0bfcf153abd3a = $(`<div id="html_8d1b68aef186468a80a0bfcf153abd3a" style="width: 100.0%; height: 100.0%;">Available Bikes: 15</div>`)[0];
+                popup_5d9d721cdfd9422fa3107c54a92c6743.setContent(html_8d1b68aef186468a80a0bfcf153abd3a);
+            
+
+            marker_7f2339c97c574bcdb2e1121675dd7c74.bindPopup(popup_5d9d721cdfd9422fa3107c54a92c6743)
+            ;
+
+            
+        
+    
+        var marker_a3db392482c64bfea2c8a80c8874e574 = L.marker(
+            [39.95005, -75.15672],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_2b97009f5a12497aa4acae39003093fd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a3db392482c64bfea2c8a80c8874e574.setIcon(icon_2b97009f5a12497aa4acae39003093fd);
+            
+    
+            var popup_b8fba5ac8c1c4b17a9a92d881d988d2c = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_88f6184ee414491b93d201047f38e6ec = $(`<div id="html_88f6184ee414491b93d201047f38e6ec" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_b8fba5ac8c1c4b17a9a92d881d988d2c.setContent(html_88f6184ee414491b93d201047f38e6ec);
+            
+
+            marker_a3db392482c64bfea2c8a80c8874e574.bindPopup(popup_b8fba5ac8c1c4b17a9a92d881d988d2c)
+            ;
+
+            
+        
+    
+        var marker_0284bca5e01946c6bc607ed34d21a54d = L.marker(
+            [39.93315, -75.16248],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_3a20d1cd35b943d98abee304d627ae2c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0284bca5e01946c6bc607ed34d21a54d.setIcon(icon_3a20d1cd35b943d98abee304d627ae2c);
+            
+    
+            var popup_4967cb178a994a049f94ad26eb270fa0 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_6910f25339014e66a82ee4b62ea16481 = $(`<div id="html_6910f25339014e66a82ee4b62ea16481" style="width: 100.0%; height: 100.0%;">Available Bikes: 14</div>`)[0];
+                popup_4967cb178a994a049f94ad26eb270fa0.setContent(html_6910f25339014e66a82ee4b62ea16481);
+            
+
+            marker_0284bca5e01946c6bc607ed34d21a54d.bindPopup(popup_4967cb178a994a049f94ad26eb270fa0)
+            ;
+
+            
+        
+    
+        var marker_092218a9b98a47ae89cfa72ce3ba0593 = L.marker(
+            [39.96271, -75.19419],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_05f6f94527f04d85b63d2fcff245d7ff = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_092218a9b98a47ae89cfa72ce3ba0593.setIcon(icon_05f6f94527f04d85b63d2fcff245d7ff);
+            
+    
+            var popup_2678e7a0ee724649a7aec8b1883066c1 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_327a2db73dd64bfbafb6e5229bd153b1 = $(`<div id="html_327a2db73dd64bfbafb6e5229bd153b1" style="width: 100.0%; height: 100.0%;">Available Bikes: 7</div>`)[0];
+                popup_2678e7a0ee724649a7aec8b1883066c1.setContent(html_327a2db73dd64bfbafb6e5229bd153b1);
+            
+
+            marker_092218a9b98a47ae89cfa72ce3ba0593.bindPopup(popup_2678e7a0ee724649a7aec8b1883066c1)
+            ;
+
+            
+        
+    
+        var marker_20b43ccd9f7b42f9b32b993ee8fa339c = L.marker(
+            [39.95424, -75.16138],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_8a4093ded4894f319f2a3dfffcabd4f4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_20b43ccd9f7b42f9b32b993ee8fa339c.setIcon(icon_8a4093ded4894f319f2a3dfffcabd4f4);
+            
+    
+            var popup_e9d9c1580c0b488d9e899db9cc806cd8 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_4b0dbbf7ac53491eb684c0c6b65c26b6 = $(`<div id="html_4b0dbbf7ac53491eb684c0c6b65c26b6" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_e9d9c1580c0b488d9e899db9cc806cd8.setContent(html_4b0dbbf7ac53491eb684c0c6b65c26b6);
+            
+
+            marker_20b43ccd9f7b42f9b32b993ee8fa339c.bindPopup(popup_e9d9c1580c0b488d9e899db9cc806cd8)
+            ;
+
+            
+        
+    
+        var marker_cfef67127d90409bb369700d751d86eb = L.marker(
+            [39.94781, -75.19409],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_5286c87ebaf741f3b8316d5e8156c306 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cfef67127d90409bb369700d751d86eb.setIcon(icon_5286c87ebaf741f3b8316d5e8156c306);
+            
+    
+            var popup_662235ea59ea4e01b6031141b5213477 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_ffe1b693de2548d5a49d6ecec1876f02 = $(`<div id="html_ffe1b693de2548d5a49d6ecec1876f02" style="width: 100.0%; height: 100.0%;">Available Bikes: 1</div>`)[0];
+                popup_662235ea59ea4e01b6031141b5213477.setContent(html_ffe1b693de2548d5a49d6ecec1876f02);
+            
+
+            marker_cfef67127d90409bb369700d751d86eb.bindPopup(popup_662235ea59ea4e01b6031141b5213477)
+            ;
+
+            
+        
+    
+        var marker_7defc0377270467aaadbb1c5fbc27b8f = L.marker(
+            [39.97121, -75.1597],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_e489dfd151b34388940ba739f49f2029 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7defc0377270467aaadbb1c5fbc27b8f.setIcon(icon_e489dfd151b34388940ba739f49f2029);
+            
+    
+            var popup_a3f7121f8a2d4a779b712bc1a976fd85 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_0f2124bb1ed3446ab8291c495aeb2dbc = $(`<div id="html_0f2124bb1ed3446ab8291c495aeb2dbc" style="width: 100.0%; height: 100.0%;">Available Bikes: 6</div>`)[0];
+                popup_a3f7121f8a2d4a779b712bc1a976fd85.setContent(html_0f2124bb1ed3446ab8291c495aeb2dbc);
+            
+
+            marker_7defc0377270467aaadbb1c5fbc27b8f.bindPopup(popup_a3f7121f8a2d4a779b712bc1a976fd85)
+            ;
+
+            
+        
+    
+        var marker_182d9ffcba614d769f50a45e4a33d7f2 = L.marker(
+            [39.96289, -75.16606],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_27c099dd90404911a6f7823b0de187b4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_182d9ffcba614d769f50a45e4a33d7f2.setIcon(icon_27c099dd90404911a6f7823b0de187b4);
+            
+    
+            var popup_945702e66e2d4b63ac2213ddf9b55934 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_ebd58921f288433abbf1ee7912c83a25 = $(`<div id="html_ebd58921f288433abbf1ee7912c83a25" style="width: 100.0%; height: 100.0%;">Available Bikes: 3</div>`)[0];
+                popup_945702e66e2d4b63ac2213ddf9b55934.setContent(html_ebd58921f288433abbf1ee7912c83a25);
+            
+
+            marker_182d9ffcba614d769f50a45e4a33d7f2.bindPopup(popup_945702e66e2d4b63ac2213ddf9b55934)
+            ;
+
+            
+        
+    
+        var marker_9bdaf9ceebc542bb99308af5114ab8d0 = L.marker(
+            [39.96849, -75.13546],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_f6c8679c8ffd4300a86bb0f147411864 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9bdaf9ceebc542bb99308af5114ab8d0.setIcon(icon_f6c8679c8ffd4300a86bb0f147411864);
+            
+    
+            var popup_099b6c694edd4fc999869d487b511bc0 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_a6cae43efe404d7ea7a5b17038710241 = $(`<div id="html_a6cae43efe404d7ea7a5b17038710241" style="width: 100.0%; height: 100.0%;">Available Bikes: 13</div>`)[0];
+                popup_099b6c694edd4fc999869d487b511bc0.setContent(html_a6cae43efe404d7ea7a5b17038710241);
+            
+
+            marker_9bdaf9ceebc542bb99308af5114ab8d0.bindPopup(popup_099b6c694edd4fc999869d487b511bc0)
+            ;
+
+            
+        
+    
+        var marker_e265bbe16be1433384741793196205a2 = L.marker(
+            [39.93082, -75.17474],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_0edb1fc4120e440a94641a1aae65b965 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e265bbe16be1433384741793196205a2.setIcon(icon_0edb1fc4120e440a94641a1aae65b965);
+            
+    
+            var popup_46c4159250094b88a98f31df1eb941d3 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_d44266bb11004f45b00f0ebb29c4291a = $(`<div id="html_d44266bb11004f45b00f0ebb29c4291a" style="width: 100.0%; height: 100.0%;">Available Bikes: 2</div>`)[0];
+                popup_46c4159250094b88a98f31df1eb941d3.setContent(html_d44266bb11004f45b00f0ebb29c4291a);
+            
+
+            marker_e265bbe16be1433384741793196205a2.bindPopup(popup_46c4159250094b88a98f31df1eb941d3)
+            ;
+
+            
+        
+    
+        var marker_2525869efd4342fca29fc54f49a744ba = L.marker(
+            [39.94792, -75.16237],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_4f14ba1304e54ee4aa4a41bbb8023f50 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2525869efd4342fca29fc54f49a744ba.setIcon(icon_4f14ba1304e54ee4aa4a41bbb8023f50);
+            
+    
+            var popup_23377f54801d47c3bcc3712e96d91048 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_ff91621a0a4e48579d50d1262d7620d4 = $(`<div id="html_ff91621a0a4e48579d50d1262d7620d4" style="width: 100.0%; height: 100.0%;">Available Bikes: 8</div>`)[0];
+                popup_23377f54801d47c3bcc3712e96d91048.setContent(html_ff91621a0a4e48579d50d1262d7620d4);
+            
+
+            marker_2525869efd4342fca29fc54f49a744ba.bindPopup(popup_23377f54801d47c3bcc3712e96d91048)
+            ;
+
+            
+        
+    
+        var marker_15ad3b96f8bf42378e4e450014768229 = L.marker(
+            [39.95012, -75.14472],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_89d442cf3156441faca3b7b748a9a347 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_15ad3b96f8bf42378e4e450014768229.setIcon(icon_89d442cf3156441faca3b7b748a9a347);
+            
+    
+            var popup_d20074b03a43440ebef7765bd926f4cc = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_8d0b02253f4c4fd6aa7fd8dd0f63972e = $(`<div id="html_8d0b02253f4c4fd6aa7fd8dd0f63972e" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_d20074b03a43440ebef7765bd926f4cc.setContent(html_8d0b02253f4c4fd6aa7fd8dd0f63972e);
+            
+
+            marker_15ad3b96f8bf42378e4e450014768229.bindPopup(popup_d20074b03a43440ebef7765bd926f4cc)
+            ;
+
+            
+        
+    
+        var marker_454a3fac79d9494c8198b5bc2bae8afb = L.marker(
+            [39.95071, -75.14921],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_0a2466a0cb14437eb4ade53c7b5f788e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_454a3fac79d9494c8198b5bc2bae8afb.setIcon(icon_0a2466a0cb14437eb4ade53c7b5f788e);
+            
+    
+            var popup_8259b6f1fb954591824cb0a872992df8 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_d1e8510dc6054de7a6566fe892576d31 = $(`<div id="html_d1e8510dc6054de7a6566fe892576d31" style="width: 100.0%; height: 100.0%;">Available Bikes: 11</div>`)[0];
+                popup_8259b6f1fb954591824cb0a872992df8.setContent(html_d1e8510dc6054de7a6566fe892576d31);
+            
+
+            marker_454a3fac79d9494c8198b5bc2bae8afb.bindPopup(popup_8259b6f1fb954591824cb0a872992df8)
+            ;
+
+            
+        
+    
+        var marker_4b0799cb08ef431ba4e1c485644b9c1a = L.marker(
+            [39.94509, -75.1425],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_3cca87cc719e4029923928156409ea44 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4b0799cb08ef431ba4e1c485644b9c1a.setIcon(icon_3cca87cc719e4029923928156409ea44);
+            
+    
+            var popup_be72eeb2bb304fc8b2cd4cb022bc003f = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_8edc15cf4dde464cbc899d5766d098e9 = $(`<div id="html_8edc15cf4dde464cbc899d5766d098e9" style="width: 100.0%; height: 100.0%;">Available Bikes: 15</div>`)[0];
+                popup_be72eeb2bb304fc8b2cd4cb022bc003f.setContent(html_8edc15cf4dde464cbc899d5766d098e9);
+            
+
+            marker_4b0799cb08ef431ba4e1c485644b9c1a.bindPopup(popup_be72eeb2bb304fc8b2cd4cb022bc003f)
+            ;
+
+            
+        
+    
+        var marker_9fa7d210cd0b495a875122ff9397fb17 = L.marker(
+            [39.95339, -75.15426],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_a706269a3ca74f8f865af16eade55d7d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9fa7d210cd0b495a875122ff9397fb17.setIcon(icon_a706269a3ca74f8f865af16eade55d7d);
+            
+    
+            var popup_49cc4dea81544597b75aa2fce87a8f7d = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_11d5552d46de4e05b8ba6da3c4fb0e32 = $(`<div id="html_11d5552d46de4e05b8ba6da3c4fb0e32" style="width: 100.0%; height: 100.0%;">Available Bikes: 0</div>`)[0];
+                popup_49cc4dea81544597b75aa2fce87a8f7d.setContent(html_11d5552d46de4e05b8ba6da3c4fb0e32);
+            
+
+            marker_9fa7d210cd0b495a875122ff9397fb17.bindPopup(popup_49cc4dea81544597b75aa2fce87a8f7d)
+            ;
+
+            
+        
+    
+        var marker_a545b0c7ebaf4251afdfd040a2c7643f = L.marker(
+            [39.96744, -75.17507],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_aeb484c77d314c46a7e709a5e40e66cc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a545b0c7ebaf4251afdfd040a2c7643f.setIcon(icon_aeb484c77d314c46a7e709a5e40e66cc);
+            
+    
+            var popup_33e908648b69495c8bc22e8ad281d530 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_e10bd58dfce240e29d9ceba8a74c37d5 = $(`<div id="html_e10bd58dfce240e29d9ceba8a74c37d5" style="width: 100.0%; height: 100.0%;">Available Bikes: 12</div>`)[0];
+                popup_33e908648b69495c8bc22e8ad281d530.setContent(html_e10bd58dfce240e29d9ceba8a74c37d5);
+            
+
+            marker_a545b0c7ebaf4251afdfd040a2c7643f.bindPopup(popup_33e908648b69495c8bc22e8ad281d530)
+            ;
+
+            
+        
+    
+        var marker_d8dc0b0c6a704903acaad7765ed7774b = L.marker(
+            [39.94732, -75.15695],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_f428234da5e44d8a84cf9932ad8c4dbc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d8dc0b0c6a704903acaad7765ed7774b.setIcon(icon_f428234da5e44d8a84cf9932ad8c4dbc);
+            
+    
+            var popup_bf4ed28d848b420cb9c729cc92aab8bb = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_83a149a4982f4070a5ea250b277879cb = $(`<div id="html_83a149a4982f4070a5ea250b277879cb" style="width: 100.0%; height: 100.0%;">Available Bikes: 7</div>`)[0];
+                popup_bf4ed28d848b420cb9c729cc92aab8bb.setContent(html_83a149a4982f4070a5ea250b277879cb);
+            
+
+            marker_d8dc0b0c6a704903acaad7765ed7774b.bindPopup(popup_bf4ed28d848b420cb9c729cc92aab8bb)
+            ;
+
+            
+        
+    
+        var marker_a0cc290fe4774ad49c52f11edfc1cac2 = L.marker(
+            [39.93231, -75.18154],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_d562e8c1d2334d13b25244ded08aaae4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a0cc290fe4774ad49c52f11edfc1cac2.setIcon(icon_d562e8c1d2334d13b25244ded08aaae4);
+            
+    
+            var popup_be9e39adf8b3487ea7589c1a95bb29a4 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_4816e75f239a402c888b8113cc50ce13 = $(`<div id="html_4816e75f239a402c888b8113cc50ce13" style="width: 100.0%; height: 100.0%;">Available Bikes: 11</div>`)[0];
+                popup_be9e39adf8b3487ea7589c1a95bb29a4.setContent(html_4816e75f239a402c888b8113cc50ce13);
+            
+
+            marker_a0cc290fe4774ad49c52f11edfc1cac2.bindPopup(popup_be9e39adf8b3487ea7589c1a95bb29a4)
+            ;
+
+            
+        
+    
+        var marker_5752dc2305bd48d9884b32254597e814 = L.marker(
+            [39.9625, -75.1742],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_9b9bc9041e78415189ad12f665ea920c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5752dc2305bd48d9884b32254597e814.setIcon(icon_9b9bc9041e78415189ad12f665ea920c);
+            
+    
+            var popup_3af92b83d96c479486836f96bce68d90 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_5d900cbb451b4f1885ec3cb6e87aef50 = $(`<div id="html_5d900cbb451b4f1885ec3cb6e87aef50" style="width: 100.0%; height: 100.0%;">Available Bikes: 12</div>`)[0];
+                popup_3af92b83d96c479486836f96bce68d90.setContent(html_5d900cbb451b4f1885ec3cb6e87aef50);
+            
+
+            marker_5752dc2305bd48d9884b32254597e814.bindPopup(popup_3af92b83d96c479486836f96bce68d90)
+            ;
+
+            
+        
+    
+        var marker_054d3b5c709a46b1931d6b6fea77d4d5 = L.marker(
+            [39.95112, -75.15457],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_c43af9d40eba4bfc851ae933b850c534 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_054d3b5c709a46b1931d6b6fea77d4d5.setIcon(icon_c43af9d40eba4bfc851ae933b850c534);
+            
+    
+            var popup_9f0ec1ac463a41ee84fe60e9bbdb9dcd = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_59f48f6914d0416d94e624ac680338cd = $(`<div id="html_59f48f6914d0416d94e624ac680338cd" style="width: 100.0%; height: 100.0%;">Available Bikes: 0</div>`)[0];
+                popup_9f0ec1ac463a41ee84fe60e9bbdb9dcd.setContent(html_59f48f6914d0416d94e624ac680338cd);
+            
+
+            marker_054d3b5c709a46b1931d6b6fea77d4d5.bindPopup(popup_9f0ec1ac463a41ee84fe60e9bbdb9dcd)
+            ;
+
+            
+        
+    
+        var marker_d67d0073200d498c9eab7b637ddd9618 = L.marker(
+            [39.97669, -75.15813],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_4fca47a178d1442bbf52cda49afa2898 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d67d0073200d498c9eab7b637ddd9618.setIcon(icon_4fca47a178d1442bbf52cda49afa2898);
+            
+    
+            var popup_6b9d42149be04e1580a548b7e9c65dbf = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_7f0ca675d5814e00b90c61719c0c4d7a = $(`<div id="html_7f0ca675d5814e00b90c61719c0c4d7a" style="width: 100.0%; height: 100.0%;">Available Bikes: 14</div>`)[0];
+                popup_6b9d42149be04e1580a548b7e9c65dbf.setContent(html_7f0ca675d5814e00b90c61719c0c4d7a);
+            
+
+            marker_d67d0073200d498c9eab7b637ddd9618.bindPopup(popup_6b9d42149be04e1580a548b7e9c65dbf)
+            ;
+
+            
+        
+    
+        var marker_58b775b872674bd6966a0d72d2c75258 = L.marker(
+            [39.96444, -75.17995],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_2361a8ed437f4d57a35e09c3ddfbbbd0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_58b775b872674bd6966a0d72d2c75258.setIcon(icon_2361a8ed437f4d57a35e09c3ddfbbbd0);
+            
+    
+            var popup_795f61ee21de440791ba2405c50bd116 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_2afe355763c14b1d85add10dc84d3d19 = $(`<div id="html_2afe355763c14b1d85add10dc84d3d19" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_795f61ee21de440791ba2405c50bd116.setContent(html_2afe355763c14b1d85add10dc84d3d19);
+            
+
+            marker_58b775b872674bd6966a0d72d2c75258.bindPopup(popup_795f61ee21de440791ba2405c50bd116)
+            ;
+
+            
+        
+    
+        var marker_5a138dc00ca04433824336bf4bcfc311 = L.marker(
+            [39.96716, -75.17001],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_4e99d5f0eae142a8a3956b555e652c58 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5a138dc00ca04433824336bf4bcfc311.setIcon(icon_4e99d5f0eae142a8a3956b555e652c58);
+            
+    
+            var popup_57774f677db84e18a27b9ca534799757 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_81383fdd1ba447629ea1c2cc8c71aa97 = $(`<div id="html_81383fdd1ba447629ea1c2cc8c71aa97" style="width: 100.0%; height: 100.0%;">Available Bikes: 10</div>`)[0];
+                popup_57774f677db84e18a27b9ca534799757.setContent(html_81383fdd1ba447629ea1c2cc8c71aa97);
+            
+
+            marker_5a138dc00ca04433824336bf4bcfc311.bindPopup(popup_57774f677db84e18a27b9ca534799757)
+            ;
+
+            
+        
+    
+        var marker_362e06715d554edf8683fd6d52751349 = L.marker(
+            [39.96265, -75.16174],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_d2579c23327b44a78d7e4fd3388902cb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_362e06715d554edf8683fd6d52751349.setIcon(icon_d2579c23327b44a78d7e4fd3388902cb);
+            
+    
+            var popup_391a7c2624a2491b98cb5ba73d51efb2 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_ee794d92d9f24e668c25056d7297504d = $(`<div id="html_ee794d92d9f24e668c25056d7297504d" style="width: 100.0%; height: 100.0%;">Available Bikes: 7</div>`)[0];
+                popup_391a7c2624a2491b98cb5ba73d51efb2.setContent(html_ee794d92d9f24e668c25056d7297504d);
+            
+
+            marker_362e06715d554edf8683fd6d52751349.bindPopup(popup_391a7c2624a2491b98cb5ba73d51efb2)
+            ;
+
+            
+        
+    
+        var marker_f7488e97447943c89b90cd98955616a1 = L.marker(
+            [39.95923, -75.17036],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_a896f604f1d747279379c3df9f04da6a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f7488e97447943c89b90cd98955616a1.setIcon(icon_a896f604f1d747279379c3df9f04da6a);
+            
+    
+            var popup_946ac0dfb5d246299808e6388c9b49d0 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_4d5077a0e74e450ba8952f6adb25623d = $(`<div id="html_4d5077a0e74e450ba8952f6adb25623d" style="width: 100.0%; height: 100.0%;">Available Bikes: 13</div>`)[0];
+                popup_946ac0dfb5d246299808e6388c9b49d0.setContent(html_4d5077a0e74e450ba8952f6adb25623d);
+            
+
+            marker_f7488e97447943c89b90cd98955616a1.bindPopup(popup_946ac0dfb5d246299808e6388c9b49d0)
+            ;
+
+            
+        
+    
+        var marker_daf8309d724a4da791950ed3c9e5c49a = L.marker(
+            [39.95425, -75.17761],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_7f4a60f091d64a51ab65a0f36fdeea45 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_daf8309d724a4da791950ed3c9e5c49a.setIcon(icon_7f4a60f091d64a51ab65a0f36fdeea45);
+            
+    
+            var popup_9fe8779e96ed433eb5cb4db517cc8abd = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_82cbe045de4e40938e55491e0190f12d = $(`<div id="html_82cbe045de4e40938e55491e0190f12d" style="width: 100.0%; height: 100.0%;">Available Bikes: 0</div>`)[0];
+                popup_9fe8779e96ed433eb5cb4db517cc8abd.setContent(html_82cbe045de4e40938e55491e0190f12d);
+            
+
+            marker_daf8309d724a4da791950ed3c9e5c49a.bindPopup(popup_9fe8779e96ed433eb5cb4db517cc8abd)
+            ;
+
+            
+        
+    
+        var marker_2677a835e3d3499aa54dd8813fb34533 = L.marker(
+            [39.95197, -75.17943],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_4212dfdeb2924437a13c0b59ac36d2bd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2677a835e3d3499aa54dd8813fb34533.setIcon(icon_4212dfdeb2924437a13c0b59ac36d2bd);
+            
+    
+            var popup_e58d40bc0e3a4bc8b351de308448c234 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_2a58604216b945978291a37974cd43ad = $(`<div id="html_2a58604216b945978291a37974cd43ad" style="width: 100.0%; height: 100.0%;">Available Bikes: 13</div>`)[0];
+                popup_e58d40bc0e3a4bc8b351de308448c234.setContent(html_2a58604216b945978291a37974cd43ad);
+            
+
+            marker_2677a835e3d3499aa54dd8813fb34533.bindPopup(popup_e58d40bc0e3a4bc8b351de308448c234)
+            ;
+
+            
+        
+    
+        var marker_e72e7d8483c9468c99e50c3df676acff = L.marker(
+            [39.94633, -75.1698],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_f0cbdc37f7284f9bb37e14e2402406ca = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e72e7d8483c9468c99e50c3df676acff.setIcon(icon_f0cbdc37f7284f9bb37e14e2402406ca);
+            
+    
+            var popup_f938502cc833422ba35f15908c0daa62 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_70de4f6f7f004533a56936e56e221a51 = $(`<div id="html_70de4f6f7f004533a56936e56e221a51" style="width: 100.0%; height: 100.0%;">Available Bikes: 1</div>`)[0];
+                popup_f938502cc833422ba35f15908c0daa62.setContent(html_70de4f6f7f004533a56936e56e221a51);
+            
+
+            marker_e72e7d8483c9468c99e50c3df676acff.bindPopup(popup_f938502cc833422ba35f15908c0daa62)
+            ;
+
+            
+        
+    
+        var marker_c8a87d2f6b1f4bf89f1f651ba74b056d = L.marker(
+            [39.9384, -75.17327],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_8f5e7e7c907144549954be53551da570 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c8a87d2f6b1f4bf89f1f651ba74b056d.setIcon(icon_8f5e7e7c907144549954be53551da570);
+            
+    
+            var popup_8f392e6e3a8f4336a8ff457008abb68c = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_efd624224a454a94a17bb3f8d43b2472 = $(`<div id="html_efd624224a454a94a17bb3f8d43b2472" style="width: 100.0%; height: 100.0%;">Available Bikes: 10</div>`)[0];
+                popup_8f392e6e3a8f4336a8ff457008abb68c.setContent(html_efd624224a454a94a17bb3f8d43b2472);
+            
+
+            marker_c8a87d2f6b1f4bf89f1f651ba74b056d.bindPopup(popup_8f392e6e3a8f4336a8ff457008abb68c)
+            ;
+
+            
+        
+    
+        var marker_a294aeabdb864685bdf57221baa9a2f0 = L.marker(
+            [39.9707, -75.15171],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_87c773a4fc19419a93980c4c4adb5c03 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a294aeabdb864685bdf57221baa9a2f0.setIcon(icon_87c773a4fc19419a93980c4c4adb5c03);
+            
+    
+            var popup_99ab9ad784e14b2b89c7be40824c4272 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_f5346b94cead42e68f73948b83633baa = $(`<div id="html_f5346b94cead42e68f73948b83633baa" style="width: 100.0%; height: 100.0%;">Available Bikes: 6</div>`)[0];
+                popup_99ab9ad784e14b2b89c7be40824c4272.setContent(html_f5346b94cead42e68f73948b83633baa);
+            
+
+            marker_a294aeabdb864685bdf57221baa9a2f0.bindPopup(popup_99ab9ad784e14b2b89c7be40824c4272)
+            ;
+
+            
+        
+    
+        var marker_ab0b93a17d2049a6977d5d49b7335e13 = L.marker(
+            [39.94561, -75.17348],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_757ccd17c0dd4e48817187d14ef46b56 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ab0b93a17d2049a6977d5d49b7335e13.setIcon(icon_757ccd17c0dd4e48817187d14ef46b56);
+            
+    
+            var popup_0b9369f43f5648558cb959c525bc4445 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_55a57d028a2d4946aa9a2c7f5bde3d8e = $(`<div id="html_55a57d028a2d4946aa9a2c7f5bde3d8e" style="width: 100.0%; height: 100.0%;">Available Bikes: 14</div>`)[0];
+                popup_0b9369f43f5648558cb959c525bc4445.setContent(html_55a57d028a2d4946aa9a2c7f5bde3d8e);
+            
+
+            marker_ab0b93a17d2049a6977d5d49b7335e13.bindPopup(popup_0b9369f43f5648558cb959c525bc4445)
+            ;
+
+            
+        
+    
+        var marker_5db1c7565a354cc096b6e61339e786cd = L.marker(
+            [39.96411, -75.19973],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_3b0d9e23fc344695be565907373d8230 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5db1c7565a354cc096b6e61339e786cd.setIcon(icon_3b0d9e23fc344695be565907373d8230);
+            
+    
+            var popup_1341f215ef974d12b383e749e788701a = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_b15fafc033bf4104b902bfc0fe454072 = $(`<div id="html_b15fafc033bf4104b902bfc0fe454072" style="width: 100.0%; height: 100.0%;">Available Bikes: 0</div>`)[0];
+                popup_1341f215ef974d12b383e749e788701a.setContent(html_b15fafc033bf4104b902bfc0fe454072);
+            
+
+            marker_5db1c7565a354cc096b6e61339e786cd.bindPopup(popup_1341f215ef974d12b383e749e788701a)
+            ;
+
+            
+        
+    
+        var marker_6b84574b11544f7385bbe9c09348771f = L.marker(
+            [39.93549, -75.16711],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_064bc1d8c54a40469a2bdcfaeef6f1a8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6b84574b11544f7385bbe9c09348771f.setIcon(icon_064bc1d8c54a40469a2bdcfaeef6f1a8);
+            
+    
+            var popup_95325737574247119f4607a0f1a1de0d = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_fc8c2c1f06bf46b89324b8e9f7e0c67b = $(`<div id="html_fc8c2c1f06bf46b89324b8e9f7e0c67b" style="width: 100.0%; height: 100.0%;">Available Bikes: 5</div>`)[0];
+                popup_95325737574247119f4607a0f1a1de0d.setContent(html_fc8c2c1f06bf46b89324b8e9f7e0c67b);
+            
+
+            marker_6b84574b11544f7385bbe9c09348771f.bindPopup(popup_95325737574247119f4607a0f1a1de0d)
+            ;
+
+            
+        
+    
+        var marker_70bd81acb25343abb431223b1ff50177 = L.marker(
+            [39.93704, -75.15038],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_d78fae2f77db446d904b04b82c6465ba = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_70bd81acb25343abb431223b1ff50177.setIcon(icon_d78fae2f77db446d904b04b82c6465ba);
+            
+    
+            var popup_897608010259454ba689e7517974c652 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_51100a7a6a1649bab4fd440cbb9ea4f2 = $(`<div id="html_51100a7a6a1649bab4fd440cbb9ea4f2" style="width: 100.0%; height: 100.0%;">Available Bikes: 20</div>`)[0];
+                popup_897608010259454ba689e7517974c652.setContent(html_51100a7a6a1649bab4fd440cbb9ea4f2);
+            
+
+            marker_70bd81acb25343abb431223b1ff50177.bindPopup(popup_897608010259454ba689e7517974c652)
+            ;
+
+            
+        
+    
+        var marker_65cbf25b02264b1081611ce24633631a = L.marker(
+            [39.96062, -75.13983],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_dc241b9112494d449acdeedb5955af9e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_65cbf25b02264b1081611ce24633631a.setIcon(icon_dc241b9112494d449acdeedb5955af9e);
+            
+    
+            var popup_3f7d562791e748cb971a866dee55911c = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_7683be9f1a0e4e50af20afd64bca97b8 = $(`<div id="html_7683be9f1a0e4e50af20afd64bca97b8" style="width: 100.0%; height: 100.0%;">Available Bikes: 8</div>`)[0];
+                popup_3f7d562791e748cb971a866dee55911c.setContent(html_7683be9f1a0e4e50af20afd64bca97b8);
+            
+
+            marker_65cbf25b02264b1081611ce24633631a.bindPopup(popup_3f7d562791e748cb971a866dee55911c)
+            ;
+
+            
+        
+    
+        var marker_55ec97e92339478a84dd8a8ec1954c7c = L.marker(
+            [39.96173, -75.18788],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_987bfefa22fc4fa294d526b04aa2eca7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_55ec97e92339478a84dd8a8ec1954c7c.setIcon(icon_987bfefa22fc4fa294d526b04aa2eca7);
+            
+    
+            var popup_7a09017010fd4072befb5824faf13213 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_6b2ea621b86d45bd97fffaecf6199345 = $(`<div id="html_6b2ea621b86d45bd97fffaecf6199345" style="width: 100.0%; height: 100.0%;">Available Bikes: 4</div>`)[0];
+                popup_7a09017010fd4072befb5824faf13213.setContent(html_6b2ea621b86d45bd97fffaecf6199345);
+            
+
+            marker_55ec97e92339478a84dd8a8ec1954c7c.bindPopup(popup_7a09017010fd4072befb5824faf13213)
+            ;
+
+            
+        
+    
+        var marker_a93ff89dc7cc4e98a970bcbce5dbae65 = L.marker(
+            [39.93445, -75.14541],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_d69900d71f2f4a12a8e1be83eba5ea69 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a93ff89dc7cc4e98a970bcbce5dbae65.setIcon(icon_d69900d71f2f4a12a8e1be83eba5ea69);
+            
+    
+            var popup_3516d1bb208242c891b76ec34d089768 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_c50c358ac21f425cac0d1f0a6949db6b = $(`<div id="html_c50c358ac21f425cac0d1f0a6949db6b" style="width: 100.0%; height: 100.0%;">Available Bikes: 21</div>`)[0];
+                popup_3516d1bb208242c891b76ec34d089768.setContent(html_c50c358ac21f425cac0d1f0a6949db6b);
+            
+
+            marker_a93ff89dc7cc4e98a970bcbce5dbae65.bindPopup(popup_3516d1bb208242c891b76ec34d089768)
+            ;
+
+            
+        
+    
+        var marker_1a14c67f31924d75aebe205d205b6ed3 = L.marker(
+            [39.96143, -75.15242],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_bc6518bf8b0c4c2ca31a05e54d08e890 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1a14c67f31924d75aebe205d205b6ed3.setIcon(icon_bc6518bf8b0c4c2ca31a05e54d08e890);
+            
+    
+            var popup_cf1c072796b34cb4b816c4a0aa4113f8 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_f8e9d0c6bbb64ca79752b3df49bff9dc = $(`<div id="html_f8e9d0c6bbb64ca79752b3df49bff9dc" style="width: 100.0%; height: 100.0%;">Available Bikes: 4</div>`)[0];
+                popup_cf1c072796b34cb4b816c4a0aa4113f8.setContent(html_f8e9d0c6bbb64ca79752b3df49bff9dc);
+            
+
+            marker_1a14c67f31924d75aebe205d205b6ed3.bindPopup(popup_cf1c072796b34cb4b816c4a0aa4113f8)
+            ;
+
+            
+        
+    
+        var marker_c5d6ad523fcf48c6a68bc4ecae1dd4a8 = L.marker(
+            [39.95511, -75.20987],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_5f3c3d0c1aa64af0b6445d8fca3449bd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c5d6ad523fcf48c6a68bc4ecae1dd4a8.setIcon(icon_5f3c3d0c1aa64af0b6445d8fca3449bd);
+            
+    
+            var popup_c4121511066446ab89cc92cd11544efc = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_e20391eb5c7640599a2bab42a87112eb = $(`<div id="html_e20391eb5c7640599a2bab42a87112eb" style="width: 100.0%; height: 100.0%;">Available Bikes: 10</div>`)[0];
+                popup_c4121511066446ab89cc92cd11544efc.setContent(html_e20391eb5c7640599a2bab42a87112eb);
+            
+
+            marker_c5d6ad523fcf48c6a68bc4ecae1dd4a8.bindPopup(popup_c4121511066446ab89cc92cd11544efc)
+            ;
+
+            
+        
+    
+        var marker_8ad269bef7594daea4e739092a5e69a8 = L.marker(
+            [39.96718, -75.16125],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_8b57a6f42e2f4b3ca1c23c54155556b9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8ad269bef7594daea4e739092a5e69a8.setIcon(icon_8b57a6f42e2f4b3ca1c23c54155556b9);
+            
+    
+            var popup_bc32ee510e74495fabe4e76f8b445516 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_94dbee26ba1f4274a378f4ffdebfaf9e = $(`<div id="html_94dbee26ba1f4274a378f4ffdebfaf9e" style="width: 100.0%; height: 100.0%;">Available Bikes: 6</div>`)[0];
+                popup_bc32ee510e74495fabe4e76f8b445516.setContent(html_94dbee26ba1f4274a378f4ffdebfaf9e);
+            
+
+            marker_8ad269bef7594daea4e739092a5e69a8.bindPopup(popup_bc32ee510e74495fabe4e76f8b445516)
+            ;
+
+            
+        
+    
+        var marker_18b0e28409254cde80b9557f86e9e5b0 = L.marker(
+            [39.97207, -75.16351],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_3ca3dd895cac40f6a767bd14d7a5562c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_18b0e28409254cde80b9557f86e9e5b0.setIcon(icon_3ca3dd895cac40f6a767bd14d7a5562c);
+            
+    
+            var popup_fbacc47826d145e1a6119bee902558d5 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_ad6ea3b49e934d5fac200d529f8e7052 = $(`<div id="html_ad6ea3b49e934d5fac200d529f8e7052" style="width: 100.0%; height: 100.0%;">Available Bikes: 3</div>`)[0];
+                popup_fbacc47826d145e1a6119bee902558d5.setContent(html_ad6ea3b49e934d5fac200d529f8e7052);
+            
+
+            marker_18b0e28409254cde80b9557f86e9e5b0.bindPopup(popup_fbacc47826d145e1a6119bee902558d5)
+            ;
+
+            
+        
+    
+        var marker_de6147e6e9684f5289d3ec7332897728 = L.marker(
+            [39.95355, -75.17192],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_ec3496253fa94dd8880093eee16f7ca3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_de6147e6e9684f5289d3ec7332897728.setIcon(icon_ec3496253fa94dd8880093eee16f7ca3);
+            
+    
+            var popup_809b4466068a4ab582b175a675b914b4 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_7c37ae7a33274b5394ad6282707f39ba = $(`<div id="html_7c37ae7a33274b5394ad6282707f39ba" style="width: 100.0%; height: 100.0%;">Available Bikes: 8</div>`)[0];
+                popup_809b4466068a4ab582b175a675b914b4.setContent(html_7c37ae7a33274b5394ad6282707f39ba);
+            
+
+            marker_de6147e6e9684f5289d3ec7332897728.bindPopup(popup_809b4466068a4ab582b175a675b914b4)
+            ;
+
+            
+        
+    
+        var marker_2d09a52d093b4fa59918150e8808a848 = L.marker(
+            [39.94019, -75.16691],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_2a7047a0ed8d47a7932271ae71e2cefb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2d09a52d093b4fa59918150e8808a848.setIcon(icon_2a7047a0ed8d47a7932271ae71e2cefb);
+            
+    
+            var popup_a4ce4286f9f04e0da010e25ff9bb24c2 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_57f7a5995c2d4902980b69ec6f9af8c5 = $(`<div id="html_57f7a5995c2d4902980b69ec6f9af8c5" style="width: 100.0%; height: 100.0%;">Available Bikes: 15</div>`)[0];
+                popup_a4ce4286f9f04e0da010e25ff9bb24c2.setContent(html_57f7a5995c2d4902980b69ec6f9af8c5);
+            
+
+            marker_2d09a52d093b4fa59918150e8808a848.bindPopup(popup_a4ce4286f9f04e0da010e25ff9bb24c2)
+            ;
+
+            
+        
+    
+        var marker_c0d31fbd96c84d5a84ffeebf74f65130 = L.marker(
+            [39.96984, -75.1418],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_51147411542747a381e04e62e94159dd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c0d31fbd96c84d5a84ffeebf74f65130.setIcon(icon_51147411542747a381e04e62e94159dd);
+            
+    
+            var popup_975eb4e245ed4b79a466fa20073c1f1c = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_af197e23ba414b188e915b33cbf43360 = $(`<div id="html_af197e23ba414b188e915b33cbf43360" style="width: 100.0%; height: 100.0%;">Available Bikes: 20</div>`)[0];
+                popup_975eb4e245ed4b79a466fa20073c1f1c.setContent(html_af197e23ba414b188e915b33cbf43360);
+            
+
+            marker_c0d31fbd96c84d5a84ffeebf74f65130.bindPopup(popup_975eb4e245ed4b79a466fa20073c1f1c)
+            ;
+
+            
+        
+    
+        var marker_2b3d300057274995a17ab6e23ef0f0f1 = L.marker(
+            [39.98837, -75.18701],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_df86ddc7653e4dc39da04a63518acc23 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2b3d300057274995a17ab6e23ef0f0f1.setIcon(icon_df86ddc7653e4dc39da04a63518acc23);
+            
+    
+            var popup_682902d5a8bc47f496d642b356956958 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_5e3eb48ff60f49c48d8b375999d0085c = $(`<div id="html_5e3eb48ff60f49c48d8b375999d0085c" style="width: 100.0%; height: 100.0%;">Available Bikes: 3</div>`)[0];
+                popup_682902d5a8bc47f496d642b356956958.setContent(html_5e3eb48ff60f49c48d8b375999d0085c);
+            
+
+            marker_2b3d300057274995a17ab6e23ef0f0f1.bindPopup(popup_682902d5a8bc47f496d642b356956958)
+            ;
+
+            
+        
+    
+        var marker_687ca2c2d7db4627a696da3b4e62001c = L.marker(
+            [39.99119, -75.17975],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_a4c592838a914b6681f98dfe77273c3f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_687ca2c2d7db4627a696da3b4e62001c.setIcon(icon_a4c592838a914b6681f98dfe77273c3f);
+            
+    
+            var popup_8ab05d8984bf45d8b29a97bde29aec52 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_cd311aabf62649858a90534123572e70 = $(`<div id="html_cd311aabf62649858a90534123572e70" style="width: 100.0%; height: 100.0%;">Available Bikes: 4</div>`)[0];
+                popup_8ab05d8984bf45d8b29a97bde29aec52.setContent(html_cd311aabf62649858a90534123572e70);
+            
+
+            marker_687ca2c2d7db4627a696da3b4e62001c.bindPopup(popup_8ab05d8984bf45d8b29a97bde29aec52)
+            ;
+
+            
+        
+    
+        var marker_2641ab6026dd43b5b7e553bb2d395475 = L.marker(
+            [39.97888, -75.13339],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_4acc73597976408f8ec6f76bba6c7cfb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2641ab6026dd43b5b7e553bb2d395475.setIcon(icon_4acc73597976408f8ec6f76bba6c7cfb);
+            
+    
+            var popup_783d71ae309f499abc4fe227c78690c0 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_dfaa43b075b44892b1ad2579aebe5ab3 = $(`<div id="html_dfaa43b075b44892b1ad2579aebe5ab3" style="width: 100.0%; height: 100.0%;">Available Bikes: 14</div>`)[0];
+                popup_783d71ae309f499abc4fe227c78690c0.setContent(html_dfaa43b075b44892b1ad2579aebe5ab3);
+            
+
+            marker_2641ab6026dd43b5b7e553bb2d395475.bindPopup(popup_783d71ae309f499abc4fe227c78690c0)
+            ;
+
+            
+        
+    
+        var marker_67e642cea6984ff4816b87a1c3df9428 = L.marker(
+            [39.93431, -75.16042],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_3cb0be69055340ac956eb8294795c4a0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_67e642cea6984ff4816b87a1c3df9428.setIcon(icon_3cb0be69055340ac956eb8294795c4a0);
+            
+    
+            var popup_67a0d2e450cb4d799d6c9b7ca8e76d44 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_aa24eca7d4484394a3c797018556f8c8 = $(`<div id="html_aa24eca7d4484394a3c797018556f8c8" style="width: 100.0%; height: 100.0%;">Available Bikes: 15</div>`)[0];
+                popup_67a0d2e450cb4d799d6c9b7ca8e76d44.setContent(html_aa24eca7d4484394a3c797018556f8c8);
+            
+
+            marker_67e642cea6984ff4816b87a1c3df9428.bindPopup(popup_67a0d2e450cb4d799d6c9b7ca8e76d44)
+            ;
+
+            
+        
+    
+        var marker_3f777c431f3b4b1f97ec910b36221f34 = L.marker(
+            [39.93401, -75.15094],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_501e05ebf4384f2f91ebda8027634246 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3f777c431f3b4b1f97ec910b36221f34.setIcon(icon_501e05ebf4384f2f91ebda8027634246);
+            
+    
+            var popup_cf02c21446ca4856bbacaf3732c6d8c1 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_6848b8b6593f4ce0a61224eda5bc28e2 = $(`<div id="html_6848b8b6593f4ce0a61224eda5bc28e2" style="width: 100.0%; height: 100.0%;">Available Bikes: 4</div>`)[0];
+                popup_cf02c21446ca4856bbacaf3732c6d8c1.setContent(html_6848b8b6593f4ce0a61224eda5bc28e2);
+            
+
+            marker_3f777c431f3b4b1f97ec910b36221f34.bindPopup(popup_cf02c21446ca4856bbacaf3732c6d8c1)
+            ;
+
+            
+        
+    
+        var marker_596752ac5a5848b4a35567cdf5f77c89 = L.marker(
+            [39.92777, -75.15103],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_c1bc16fd09244c379a15947eaa113ec5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_596752ac5a5848b4a35567cdf5f77c89.setIcon(icon_c1bc16fd09244c379a15947eaa113ec5);
+            
+    
+            var popup_7732a22aaf394a26b8ced7c13514aaf8 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_e0f145d9039147de8674374a73823831 = $(`<div id="html_e0f145d9039147de8674374a73823831" style="width: 100.0%; height: 100.0%;">Available Bikes: 32</div>`)[0];
+                popup_7732a22aaf394a26b8ced7c13514aaf8.setContent(html_e0f145d9039147de8674374a73823831);
+            
+
+            marker_596752ac5a5848b4a35567cdf5f77c89.bindPopup(popup_7732a22aaf394a26b8ced7c13514aaf8)
+            ;
+
+            
+        
+    
+        var marker_b535587be39a4f0ab45d1150b22cdb26 = L.marker(
+            [39.94295, -75.15955],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_e6d99341418542d79a5a40d1d1dae719 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b535587be39a4f0ab45d1150b22cdb26.setIcon(icon_e6d99341418542d79a5a40d1d1dae719);
+            
+    
+            var popup_c08a1a15ebdf4499935ca8d18e44f307 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_4b6ae99983c04b1bab34933a3d552065 = $(`<div id="html_4b6ae99983c04b1bab34933a3d552065" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_c08a1a15ebdf4499935ca8d18e44f307.setContent(html_4b6ae99983c04b1bab34933a3d552065);
+            
+
+            marker_b535587be39a4f0ab45d1150b22cdb26.bindPopup(popup_c08a1a15ebdf4499935ca8d18e44f307)
+            ;
+
+            
+        
+    
+        var marker_0253fce0e3dd46cba5bd0c0ec7e49b4c = L.marker(
+            [39.96759, -75.17952],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_51dcd6f93f6a4511a5f8262c61d4159d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0253fce0e3dd46cba5bd0c0ec7e49b4c.setIcon(icon_51dcd6f93f6a4511a5f8262c61d4159d);
+            
+    
+            var popup_d147d18a531f4a7c86b6a8abeb563a33 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_9aaa61614bac40b3bdfd1ad91c8b5ef6 = $(`<div id="html_9aaa61614bac40b3bdfd1ad91c8b5ef6" style="width: 100.0%; height: 100.0%;">Available Bikes: 16</div>`)[0];
+                popup_d147d18a531f4a7c86b6a8abeb563a33.setContent(html_9aaa61614bac40b3bdfd1ad91c8b5ef6);
+            
+
+            marker_0253fce0e3dd46cba5bd0c0ec7e49b4c.bindPopup(popup_d147d18a531f4a7c86b6a8abeb563a33)
+            ;
+
+            
+        
+    
+        var marker_f1ced15fdb184d4a978a17b373f4780a = L.marker(
+            [39.97714, -75.1794],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_24f7ab71d591484aa52b6e3358f7345d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f1ced15fdb184d4a978a17b373f4780a.setIcon(icon_24f7ab71d591484aa52b6e3358f7345d);
+            
+    
+            var popup_5b3c6c8e953349f38d42621314ff0dce = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_457df05a6164499882cac37897ae73c1 = $(`<div id="html_457df05a6164499882cac37897ae73c1" style="width: 100.0%; height: 100.0%;">Available Bikes: 6</div>`)[0];
+                popup_5b3c6c8e953349f38d42621314ff0dce.setContent(html_457df05a6164499882cac37897ae73c1);
+            
+
+            marker_f1ced15fdb184d4a978a17b373f4780a.bindPopup(popup_5b3c6c8e953349f38d42621314ff0dce)
+            ;
+
+            
+        
+    
+        var marker_0f984d6bec9d4a9fa491f0d0dc2da63b = L.marker(
+            [39.96664, -75.19209],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_3a168e99558346469afb879db376a038 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0f984d6bec9d4a9fa491f0d0dc2da63b.setIcon(icon_3a168e99558346469afb879db376a038);
+            
+    
+            var popup_67a2fedc35974d6b8a98ebd48612dd6f = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_ce87a140e6c74b8eb5d8087cc24858a7 = $(`<div id="html_ce87a140e6c74b8eb5d8087cc24858a7" style="width: 100.0%; height: 100.0%;">Available Bikes: 1</div>`)[0];
+                popup_67a2fedc35974d6b8a98ebd48612dd6f.setContent(html_ce87a140e6c74b8eb5d8087cc24858a7);
+            
+
+            marker_0f984d6bec9d4a9fa491f0d0dc2da63b.bindPopup(popup_67a2fedc35974d6b8a98ebd48612dd6f)
+            ;
+
+            
+        
+    
+        var marker_7f6db7d6c9f2404f89fea0ca6b59f0f6 = L.marker(
+            [39.99179, -75.18637],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_be025c256f2c410c87cab5b09bf11b12 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7f6db7d6c9f2404f89fea0ca6b59f0f6.setIcon(icon_be025c256f2c410c87cab5b09bf11b12);
+            
+    
+            var popup_d0940047220c45c6aae0fe1200090d01 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_0778a1b9dc7e4ac683baa6ec32359fab = $(`<div id="html_0778a1b9dc7e4ac683baa6ec32359fab" style="width: 100.0%; height: 100.0%;">Available Bikes: 3</div>`)[0];
+                popup_d0940047220c45c6aae0fe1200090d01.setContent(html_0778a1b9dc7e4ac683baa6ec32359fab);
+            
+
+            marker_7f6db7d6c9f2404f89fea0ca6b59f0f6.bindPopup(popup_d0940047220c45c6aae0fe1200090d01)
+            ;
+
+            
+        
+    
+        var marker_590f5ef2bbdc4be29dcf15a7cac0969c = L.marker(
+            [39.98203, -75.18866],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_4dcb6f7c1e044c4f8257467062f727d0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_590f5ef2bbdc4be29dcf15a7cac0969c.setIcon(icon_4dcb6f7c1e044c4f8257467062f727d0);
+            
+    
+            var popup_f7278ec31bf24662b62daf77c8d0e566 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_f328a2bb50f04439bddf724e424691ac = $(`<div id="html_f328a2bb50f04439bddf724e424691ac" style="width: 100.0%; height: 100.0%;">Available Bikes: 6</div>`)[0];
+                popup_f7278ec31bf24662b62daf77c8d0e566.setContent(html_f328a2bb50f04439bddf724e424691ac);
+            
+
+            marker_590f5ef2bbdc4be29dcf15a7cac0969c.bindPopup(popup_f7278ec31bf24662b62daf77c8d0e566)
+            ;
+
+            
+        
+    
+        var marker_3712a6afe5154068bc108fbc422d558b = L.marker(
+            [39.95316, -75.16551],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_80e008e747ca48f48354249a95640732 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3712a6afe5154068bc108fbc422d558b.setIcon(icon_80e008e747ca48f48354249a95640732);
+            
+    
+            var popup_c8a4600f0e494b7e81161d078a3a213b = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_f552f6634b4d49448bc09c41053c94b0 = $(`<div id="html_f552f6634b4d49448bc09c41053c94b0" style="width: 100.0%; height: 100.0%;">Available Bikes: 7</div>`)[0];
+                popup_c8a4600f0e494b7e81161d078a3a213b.setContent(html_f552f6634b4d49448bc09c41053c94b0);
+            
+
+            marker_3712a6afe5154068bc108fbc422d558b.bindPopup(popup_c8a4600f0e494b7e81161d078a3a213b)
+            ;
+
+            
+        
+    
+        var marker_7ea693eae4ed4b37a6ea09bbbc1e0242 = L.marker(
+            [39.96175, -75.13641],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_4ed00e3e0ffa40c585cd51c8a5d21011 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7ea693eae4ed4b37a6ea09bbbc1e0242.setIcon(icon_4ed00e3e0ffa40c585cd51c8a5d21011);
+            
+    
+            var popup_5be6ae0fa51d4fbcbfd52f2702e8c1fb = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_01b4fda30010407bbabaef2633ff74d1 = $(`<div id="html_01b4fda30010407bbabaef2633ff74d1" style="width: 100.0%; height: 100.0%;">Available Bikes: 7</div>`)[0];
+                popup_5be6ae0fa51d4fbcbfd52f2702e8c1fb.setContent(html_01b4fda30010407bbabaef2633ff74d1);
+            
+
+            marker_7ea693eae4ed4b37a6ea09bbbc1e0242.bindPopup(popup_5be6ae0fa51d4fbcbfd52f2702e8c1fb)
+            ;
+
+            
+        
+    
+        var marker_9e8b0d4d8434407b879c03aa5688224e = L.marker(
+            [39.97779, -75.21323],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_b3537392ffac428b8ecc4fa4738fdeb7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9e8b0d4d8434407b879c03aa5688224e.setIcon(icon_b3537392ffac428b8ecc4fa4738fdeb7);
+            
+    
+            var popup_624d3b0916724842a6933d249320b62d = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_111ad3386ebd4287bc1f9f36d0f04aa7 = $(`<div id="html_111ad3386ebd4287bc1f9f36d0f04aa7" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_624d3b0916724842a6933d249320b62d.setContent(html_111ad3386ebd4287bc1f9f36d0f04aa7);
+            
+
+            marker_9e8b0d4d8434407b879c03aa5688224e.bindPopup(popup_624d3b0916724842a6933d249320b62d)
+            ;
+
+            
+        
+    
+        var marker_b5f8cdde1a554c5480a2b989c7561797 = L.marker(
+            [39.95373, -75.21825],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_0bed7c303c524ddf8ede8bc85233039e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b5f8cdde1a554c5480a2b989c7561797.setIcon(icon_0bed7c303c524ddf8ede8bc85233039e);
+            
+    
+            var popup_52f42e3c29a34c7e88e0e199d3a5c679 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_2dac1d5b766943d197cc4f08246a0085 = $(`<div id="html_2dac1d5b766943d197cc4f08246a0085" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_52f42e3c29a34c7e88e0e199d3a5c679.setContent(html_2dac1d5b766943d197cc4f08246a0085);
+            
+
+            marker_b5f8cdde1a554c5480a2b989c7561797.bindPopup(popup_52f42e3c29a34c7e88e0e199d3a5c679)
+            ;
+
+            
+        
+    
+        var marker_c31f4f18bc6e43d08a448a0aa1996ed8 = L.marker(
+            [39.97472, -75.19781],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_a3aca4b3a55245f7b8656cdededf2d42 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c31f4f18bc6e43d08a448a0aa1996ed8.setIcon(icon_a3aca4b3a55245f7b8656cdededf2d42);
+            
+    
+            var popup_afa8a57356b445b4922143ccfc923836 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_ffe4df97ad13402ab09886a33473b0df = $(`<div id="html_ffe4df97ad13402ab09886a33473b0df" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_afa8a57356b445b4922143ccfc923836.setContent(html_ffe4df97ad13402ab09886a33473b0df);
+            
+
+            marker_c31f4f18bc6e43d08a448a0aa1996ed8.bindPopup(popup_afa8a57356b445b4922143ccfc923836)
+            ;
+
+            
+        
+    
+        var marker_228fe0709b1e41b9a51bb45074b23c00 = L.marker(
+            [39.93775, -75.18012],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_fc69a865c64f4f6282db29daef4f7510 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_228fe0709b1e41b9a51bb45074b23c00.setIcon(icon_fc69a865c64f4f6282db29daef4f7510);
+            
+    
+            var popup_e50cf1f5e13a4cbead88b63e4c319aaa = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_5b1427ac87b548f596ab82167727af62 = $(`<div id="html_5b1427ac87b548f596ab82167727af62" style="width: 100.0%; height: 100.0%;">Available Bikes: 11</div>`)[0];
+                popup_e50cf1f5e13a4cbead88b63e4c319aaa.setContent(html_5b1427ac87b548f596ab82167727af62);
+            
+
+            marker_228fe0709b1e41b9a51bb45074b23c00.bindPopup(popup_e50cf1f5e13a4cbead88b63e4c319aaa)
+            ;
+
+            
+        
+    
+        var marker_be9b4f2c7ba94d48a55987f58e5d3184 = L.marker(
+            [39.97263, -75.16757],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_894045866a0943518ff860055b20aa00 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_be9b4f2c7ba94d48a55987f58e5d3184.setIcon(icon_894045866a0943518ff860055b20aa00);
+            
+    
+            var popup_fe8ceeaad4ea4066b7f1ad841253f968 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_2dcbef5bfa01455988db85b290e83bae = $(`<div id="html_2dcbef5bfa01455988db85b290e83bae" style="width: 100.0%; height: 100.0%;">Available Bikes: 8</div>`)[0];
+                popup_fe8ceeaad4ea4066b7f1ad841253f968.setContent(html_2dcbef5bfa01455988db85b290e83bae);
+            
+
+            marker_be9b4f2c7ba94d48a55987f58e5d3184.bindPopup(popup_fe8ceeaad4ea4066b7f1ad841253f968)
+            ;
+
+            
+        
+    
+        var marker_eea991f842ed4298977abbceb334a299 = L.marker(
+            [39.96006, -75.17198],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_64ee6e0a8c104467940e14c325f49787 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eea991f842ed4298977abbceb334a299.setIcon(icon_64ee6e0a8c104467940e14c325f49787);
+            
+    
+            var popup_c7be1bb4d9b14128b0deb6d92edb5d8f = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_b48d8a0784374d8ea645e97ff21c8545 = $(`<div id="html_b48d8a0784374d8ea645e97ff21c8545" style="width: 100.0%; height: 100.0%;">Available Bikes: 7</div>`)[0];
+                popup_c7be1bb4d9b14128b0deb6d92edb5d8f.setContent(html_b48d8a0784374d8ea645e97ff21c8545);
+            
+
+            marker_eea991f842ed4298977abbceb334a299.bindPopup(popup_c7be1bb4d9b14128b0deb6d92edb5d8f)
+            ;
+
+            
+        
+    
+        var marker_1557884631ea44dd966e7983c98146a7 = L.marker(
+            [39.97841, -75.22399],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_29a22fd93cf3440bab336e2da6a7bfff = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1557884631ea44dd966e7983c98146a7.setIcon(icon_29a22fd93cf3440bab336e2da6a7bfff);
+            
+    
+            var popup_e263d5b89f0348ba9f5de4a43547e98f = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_3705ac6d6ad4435b8e0584b46337f719 = $(`<div id="html_3705ac6d6ad4435b8e0584b46337f719" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_e263d5b89f0348ba9f5de4a43547e98f.setContent(html_3705ac6d6ad4435b8e0584b46337f719);
+            
+
+            marker_1557884631ea44dd966e7983c98146a7.bindPopup(popup_e263d5b89f0348ba9f5de4a43547e98f)
+            ;
+
+            
+        
+    
+        var marker_639cf15efdc543c8ada5618feef52449 = L.marker(
+            [39.95866, -75.21323],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_827b9575a192457ab151d26a85e61bca = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_639cf15efdc543c8ada5618feef52449.setIcon(icon_827b9575a192457ab151d26a85e61bca);
+            
+    
+            var popup_8e385de34e7e4652abef4bc84837c1cf = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_f6a97192acb84ca59dd486a26008b364 = $(`<div id="html_f6a97192acb84ca59dd486a26008b364" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_8e385de34e7e4652abef4bc84837c1cf.setContent(html_f6a97192acb84ca59dd486a26008b364);
+            
+
+            marker_639cf15efdc543c8ada5618feef52449.bindPopup(popup_8e385de34e7e4652abef4bc84837c1cf)
+            ;
+
+            
+        
+    
+        var marker_511ede7fc3234eed942bf109ee5baeee = L.marker(
+            [39.96674, -75.20799],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_409b2175b6e947f4afb3a6fc71189577 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_511ede7fc3234eed942bf109ee5baeee.setIcon(icon_409b2175b6e947f4afb3a6fc71189577);
+            
+    
+            var popup_f4c7ce51342a4fd68a4843f9125183c8 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_74c8f261245a4cfb886200865fc19a18 = $(`<div id="html_74c8f261245a4cfb886200865fc19a18" style="width: 100.0%; height: 100.0%;">Available Bikes: 4</div>`)[0];
+                popup_f4c7ce51342a4fd68a4843f9125183c8.setContent(html_74c8f261245a4cfb886200865fc19a18);
+            
+
+            marker_511ede7fc3234eed942bf109ee5baeee.bindPopup(popup_f4c7ce51342a4fd68a4843f9125183c8)
+            ;
+
+            
+        
+    
+        var marker_716be490b54b4cad9440fd7efd5c5be4 = L.marker(
+            [39.97522, -75.18669],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_455b24a43a114879a22f8275684b526a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_716be490b54b4cad9440fd7efd5c5be4.setIcon(icon_455b24a43a114879a22f8275684b526a);
+            
+    
+            var popup_149957616608423a8b18e562de532e54 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_3b24cb1a22e14d7ca2a0773795369d17 = $(`<div id="html_3b24cb1a22e14d7ca2a0773795369d17" style="width: 100.0%; height: 100.0%;">Available Bikes: 8</div>`)[0];
+                popup_149957616608423a8b18e562de532e54.setContent(html_3b24cb1a22e14d7ca2a0773795369d17);
+            
+
+            marker_716be490b54b4cad9440fd7efd5c5be4.bindPopup(popup_149957616608423a8b18e562de532e54)
+            ;
+
+            
+        
+    
+        var marker_a34d650a0d9a49bda45a3c26392694a9 = L.marker(
+            [39.97414, -75.18022],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_2017bcb1943749319ae8bde3bad103f0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a34d650a0d9a49bda45a3c26392694a9.setIcon(icon_2017bcb1943749319ae8bde3bad103f0);
+            
+    
+            var popup_e2035bc432944d188c1158f254100127 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_3e542afb6e7241dfafd32117e79cf28d = $(`<div id="html_3e542afb6e7241dfafd32117e79cf28d" style="width: 100.0%; height: 100.0%;">Available Bikes: 6</div>`)[0];
+                popup_e2035bc432944d188c1158f254100127.setContent(html_3e542afb6e7241dfafd32117e79cf28d);
+            
+
+            marker_a34d650a0d9a49bda45a3c26392694a9.bindPopup(popup_e2035bc432944d188c1158f254100127)
+            ;
+
+            
+        
+    
+        var marker_91abeae170ec4fc79a746f54a35e975f = L.marker(
+            [39.98004, -75.17088],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_eb046e8ecd104afebc55c7af50f8d09a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_91abeae170ec4fc79a746f54a35e975f.setIcon(icon_eb046e8ecd104afebc55c7af50f8d09a);
+            
+    
+            var popup_fa19365b1ce040759db562e3b9575fa2 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_22b71d1242a8493bbed9a90161781b96 = $(`<div id="html_22b71d1242a8493bbed9a90161781b96" style="width: 100.0%; height: 100.0%;">Available Bikes: 2</div>`)[0];
+                popup_fa19365b1ce040759db562e3b9575fa2.setContent(html_22b71d1242a8493bbed9a90161781b96);
+            
+
+            marker_91abeae170ec4fc79a746f54a35e975f.bindPopup(popup_fa19365b1ce040759db562e3b9575fa2)
+            ;
+
+            
+        
+    
+        var marker_234b2973a63f46c8ac7494fa5361b84c = L.marker(
+            [39.95295, -75.13979],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_7317cda8a94946d5bf5b6ed93c6411f0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_234b2973a63f46c8ac7494fa5361b84c.setIcon(icon_7317cda8a94946d5bf5b6ed93c6411f0);
+            
+    
+            var popup_71db5c659cd74235a07fa23c576c7cee = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_3d6207d54fbf45b99c2859fca3f3f958 = $(`<div id="html_3d6207d54fbf45b99c2859fca3f3f958" style="width: 100.0%; height: 100.0%;">Available Bikes: 7</div>`)[0];
+                popup_71db5c659cd74235a07fa23c576c7cee.setContent(html_3d6207d54fbf45b99c2859fca3f3f958);
+            
+
+            marker_234b2973a63f46c8ac7494fa5361b84c.bindPopup(popup_71db5c659cd74235a07fa23c576c7cee)
+            ;
+
+            
+        
+    
+        var marker_6d211b53a466439eb1413e56137a3647 = L.marker(
+            [39.94391, -75.16735],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_020a2eb9a0cd42e7b3e9de852bab02df = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6d211b53a466439eb1413e56137a3647.setIcon(icon_020a2eb9a0cd42e7b3e9de852bab02df);
+            
+    
+            var popup_1ee1616ed6104364a8f6c5c26e9a4957 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_b0a66c349999446ca8d0c6a3901d1e0e = $(`<div id="html_b0a66c349999446ca8d0c6a3901d1e0e" style="width: 100.0%; height: 100.0%;">Available Bikes: 3</div>`)[0];
+                popup_1ee1616ed6104364a8f6c5c26e9a4957.setContent(html_b0a66c349999446ca8d0c6a3901d1e0e);
+            
+
+            marker_6d211b53a466439eb1413e56137a3647.bindPopup(popup_1ee1616ed6104364a8f6c5c26e9a4957)
+            ;
+
+            
+        
+    
+        var marker_5e1bf17bc2924bfaad33448c52f97fcb = L.marker(
+            [39.94681, -75.19311],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_27bc4380553141bcacabf6706e178cd4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5e1bf17bc2924bfaad33448c52f97fcb.setIcon(icon_27bc4380553141bcacabf6706e178cd4);
+            
+    
+            var popup_3697a2467943468a9dd4c51e5616b79d = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_30377bc412aa4c15a835dec5fa8d60cd = $(`<div id="html_30377bc412aa4c15a835dec5fa8d60cd" style="width: 100.0%; height: 100.0%;">Available Bikes: 0</div>`)[0];
+                popup_3697a2467943468a9dd4c51e5616b79d.setContent(html_30377bc412aa4c15a835dec5fa8d60cd);
+            
+
+            marker_5e1bf17bc2924bfaad33448c52f97fcb.bindPopup(popup_3697a2467943468a9dd4c51e5616b79d)
+            ;
+
+            
+        
+    
+        var marker_6337c423ab3240a59bceac9dfab622d6 = L.marker(
+            [39.92884, -75.17021],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_e9251562a3284c44898cf65d71619927 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6337c423ab3240a59bceac9dfab622d6.setIcon(icon_e9251562a3284c44898cf65d71619927);
+            
+    
+            var popup_353e734e72ee440587a2f1907750e384 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_c588ad84f7d141748086419f75f34dce = $(`<div id="html_c588ad84f7d141748086419f75f34dce" style="width: 100.0%; height: 100.0%;">Available Bikes: 16</div>`)[0];
+                popup_353e734e72ee440587a2f1907750e384.setContent(html_c588ad84f7d141748086419f75f34dce);
+            
+
+            marker_6337c423ab3240a59bceac9dfab622d6.bindPopup(popup_353e734e72ee440587a2f1907750e384)
+            ;
+
+            
+        
+    
+        var marker_505cdbb73b3f48208a991401bc19a843 = L.marker(
+            [39.94993, -75.20286],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_a5cc31ca018045d6bc10bb87b3b1febe = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_505cdbb73b3f48208a991401bc19a843.setIcon(icon_a5cc31ca018045d6bc10bb87b3b1febe);
+            
+    
+            var popup_41e1c6375c7b47efa4cbb62a252ac6cb = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_0d17fc8aa0fe4023a39999790ca406a2 = $(`<div id="html_0d17fc8aa0fe4023a39999790ca406a2" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_41e1c6375c7b47efa4cbb62a252ac6cb.setContent(html_0d17fc8aa0fe4023a39999790ca406a2);
+            
+
+            marker_505cdbb73b3f48208a991401bc19a843.bindPopup(popup_41e1c6375c7b47efa4cbb62a252ac6cb)
+            ;
+
+            
+        
+    
+        var marker_7d8ab5b2c07140bd9941e3b457c2130f = L.marker(
+            [39.97216, -75.12994],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_522fbea578bc40dc92458d2f11a39178 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7d8ab5b2c07140bd9941e3b457c2130f.setIcon(icon_522fbea578bc40dc92458d2f11a39178);
+            
+    
+            var popup_84000d139dd64f0696bc9c0706b811ff = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_7b0d84bb18b44d1aa1558e74324af4c0 = $(`<div id="html_7b0d84bb18b44d1aa1558e74324af4c0" style="width: 100.0%; height: 100.0%;">Available Bikes: 10</div>`)[0];
+                popup_84000d139dd64f0696bc9c0706b811ff.setContent(html_7b0d84bb18b44d1aa1558e74324af4c0);
+            
+
+            marker_7d8ab5b2c07140bd9941e3b457c2130f.bindPopup(popup_84000d139dd64f0696bc9c0706b811ff)
+            ;
+
+            
+        
+    
+        var marker_aed6eabf9c1d46a09f04b7561461f5a1 = L.marker(
+            [39.95924, -75.15821],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_0f339eff13d3422db1edebfc86b10eda = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aed6eabf9c1d46a09f04b7561461f5a1.setIcon(icon_0f339eff13d3422db1edebfc86b10eda);
+            
+    
+            var popup_62aac357f2cf49dcabaa6bcb10b4f4ed = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_d7d1c762207e403081e92bb5addfb2d5 = $(`<div id="html_d7d1c762207e403081e92bb5addfb2d5" style="width: 100.0%; height: 100.0%;">Available Bikes: 16</div>`)[0];
+                popup_62aac357f2cf49dcabaa6bcb10b4f4ed.setContent(html_d7d1c762207e403081e92bb5addfb2d5);
+            
+
+            marker_aed6eabf9c1d46a09f04b7561461f5a1.bindPopup(popup_62aac357f2cf49dcabaa6bcb10b4f4ed)
+            ;
+
+            
+        
+    
+        var marker_929faa04b6e64311ab4aa561b87fc403 = L.marker(
+            [39.94018, -75.15442],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_6862c09b66b7467897ea89bf8f50588c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_929faa04b6e64311ab4aa561b87fc403.setIcon(icon_6862c09b66b7467897ea89bf8f50588c);
+            
+    
+            var popup_d10ee7e36de24898988ad2fae1a48a50 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_45420cd539cc4048937d499a01de9e5e = $(`<div id="html_45420cd539cc4048937d499a01de9e5e" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_d10ee7e36de24898988ad2fae1a48a50.setContent(html_45420cd539cc4048937d499a01de9e5e);
+            
+
+            marker_929faa04b6e64311ab4aa561b87fc403.bindPopup(popup_d10ee7e36de24898988ad2fae1a48a50)
+            ;
+
+            
+        
+    
+        var marker_6efb169b990946fdab4ebfa8ab1ff9ee = L.marker(
+            [39.95381, -75.17407],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_d12cb82441b1428ea45a3ee41ec06930 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6efb169b990946fdab4ebfa8ab1ff9ee.setIcon(icon_d12cb82441b1428ea45a3ee41ec06930);
+            
+    
+            var popup_8cdb2246adc147598eb9f9f02e0865f4 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_947ea51cd413410daf09cb2562be80b9 = $(`<div id="html_947ea51cd413410daf09cb2562be80b9" style="width: 100.0%; height: 100.0%;">Available Bikes: 1</div>`)[0];
+                popup_8cdb2246adc147598eb9f9f02e0865f4.setContent(html_947ea51cd413410daf09cb2562be80b9);
+            
+
+            marker_6efb169b990946fdab4ebfa8ab1ff9ee.bindPopup(popup_8cdb2246adc147598eb9f9f02e0865f4)
+            ;
+
+            
+        
+    
+        var marker_47d3e14511cf4f809ffe1838f0fc5679 = L.marker(
+            [39.92545, -75.15954],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_0214e8b03196475fbd61a8be6ad8e567 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_47d3e14511cf4f809ffe1838f0fc5679.setIcon(icon_0214e8b03196475fbd61a8be6ad8e567);
+            
+    
+            var popup_273ace76ba7043bb82b37d1c6863b2c0 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_af25b91e46ce4b178383836b299274ae = $(`<div id="html_af25b91e46ce4b178383836b299274ae" style="width: 100.0%; height: 100.0%;">Available Bikes: 11</div>`)[0];
+                popup_273ace76ba7043bb82b37d1c6863b2c0.setContent(html_af25b91e46ce4b178383836b299274ae);
+            
+
+            marker_47d3e14511cf4f809ffe1838f0fc5679.bindPopup(popup_273ace76ba7043bb82b37d1c6863b2c0)
+            ;
+
+            
+        
+    
+        var marker_78fa21767665470d888895b5d29d7c27 = L.marker(
+            [39.92552, -75.16904],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_2625fddd3bbd4162bf34c6af390f4e44 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_78fa21767665470d888895b5d29d7c27.setIcon(icon_2625fddd3bbd4162bf34c6af390f4e44);
+            
+    
+            var popup_3c3038493038440fb3152c06f6143749 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_8e09be437d4a46839adcce5a6baf346b = $(`<div id="html_8e09be437d4a46839adcce5a6baf346b" style="width: 100.0%; height: 100.0%;">Available Bikes: 4</div>`)[0];
+                popup_3c3038493038440fb3152c06f6143749.setContent(html_8e09be437d4a46839adcce5a6baf346b);
+            
+
+            marker_78fa21767665470d888895b5d29d7c27.bindPopup(popup_3c3038493038440fb3152c06f6143749)
+            ;
+
+            
+        
+    
+        var marker_f8ffc8c16a7b4adab655339da9126140 = L.marker(
+            [39.95121, -75.19962],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_f9b51d39ed314ceea55d84c5b0d6d5b8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f8ffc8c16a7b4adab655339da9126140.setIcon(icon_f9b51d39ed314ceea55d84c5b0d6d5b8);
+            
+    
+            var popup_1bfc4f20273244cb94f6175e3bf98da4 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_358eb55e847b4e54a95fd7d1a23fac2a = $(`<div id="html_358eb55e847b4e54a95fd7d1a23fac2a" style="width: 100.0%; height: 100.0%;">Available Bikes: 2</div>`)[0];
+                popup_1bfc4f20273244cb94f6175e3bf98da4.setContent(html_358eb55e847b4e54a95fd7d1a23fac2a);
+            
+
+            marker_f8ffc8c16a7b4adab655339da9126140.bindPopup(popup_1bfc4f20273244cb94f6175e3bf98da4)
+            ;
+
+            
+        
+    
+        var marker_09fa5efde08c4942a45f39f31d27ebf1 = L.marker(
+            [39.95662, -75.19862],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_e2d8a85f40854b5a820c36eaaf775df4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_09fa5efde08c4942a45f39f31d27ebf1.setIcon(icon_e2d8a85f40854b5a820c36eaaf775df4);
+            
+    
+            var popup_435ab5122ff24ccb9f5cc84e57674a9f = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_b211d53dcb4d410ca86a9386aa35d7c4 = $(`<div id="html_b211d53dcb4d410ca86a9386aa35d7c4" style="width: 100.0%; height: 100.0%;">Available Bikes: 1</div>`)[0];
+                popup_435ab5122ff24ccb9f5cc84e57674a9f.setContent(html_b211d53dcb4d410ca86a9386aa35d7c4);
+            
+
+            marker_09fa5efde08c4942a45f39f31d27ebf1.bindPopup(popup_435ab5122ff24ccb9f5cc84e57674a9f)
+            ;
+
+            
+        
+    
+        var marker_42f543735cba4e9788df654a1f47f961 = L.marker(
+            [39.95486, -75.18091],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_bc491e0dded448a0a471f5cfed723c55 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_42f543735cba4e9788df654a1f47f961.setIcon(icon_bc491e0dded448a0a471f5cfed723c55);
+            
+    
+            var popup_438ee66c1b774f52be627c3e0ccfc67e = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_3f86854f9aab4836a8213e80d0da8dc4 = $(`<div id="html_3f86854f9aab4836a8213e80d0da8dc4" style="width: 100.0%; height: 100.0%;">Available Bikes: 0</div>`)[0];
+                popup_438ee66c1b774f52be627c3e0ccfc67e.setContent(html_3f86854f9aab4836a8213e80d0da8dc4);
+            
+
+            marker_42f543735cba4e9788df654a1f47f961.bindPopup(popup_438ee66c1b774f52be627c3e0ccfc67e)
+            ;
+
+            
+        
+    
+        var marker_4360422e651b47118d6d52c658bf9992 = L.marker(
+            [39.94595, -75.18475],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_86d151155e1d47b89709da4d5f971cfc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4360422e651b47118d6d52c658bf9992.setIcon(icon_86d151155e1d47b89709da4d5f971cfc);
+            
+    
+            var popup_13c52b3348e3409785838aafdf38da5f = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_94ece398f7264ad19cc4b5b7dc7a4d77 = $(`<div id="html_94ece398f7264ad19cc4b5b7dc7a4d77" style="width: 100.0%; height: 100.0%;">Available Bikes: 2</div>`)[0];
+                popup_13c52b3348e3409785838aafdf38da5f.setContent(html_94ece398f7264ad19cc4b5b7dc7a4d77);
+            
+
+            marker_4360422e651b47118d6d52c658bf9992.bindPopup(popup_13c52b3348e3409785838aafdf38da5f)
+            ;
+
+            
+        
+    
+        var marker_46d458e47e4e48a1937c4c34c8639cf3 = L.marker(
+            [39.94974, -75.18097],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_c717a3a8e14642c081efcbe25f1faac2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_46d458e47e4e48a1937c4c34c8639cf3.setIcon(icon_c717a3a8e14642c081efcbe25f1faac2);
+            
+    
+            var popup_cebbebb7fe564826b98c6f9c42b9ca3d = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_5cbb04a136924af58985f0b20e60cd10 = $(`<div id="html_5cbb04a136924af58985f0b20e60cd10" style="width: 100.0%; height: 100.0%;">Available Bikes: 9</div>`)[0];
+                popup_cebbebb7fe564826b98c6f9c42b9ca3d.setContent(html_5cbb04a136924af58985f0b20e60cd10);
+            
+
+            marker_46d458e47e4e48a1937c4c34c8639cf3.bindPopup(popup_cebbebb7fe564826b98c6f9c42b9ca3d)
+            ;
+
+            
+        
+    
+        var marker_6f4b8ba0846849afae9ad8a6c6b16d94 = L.marker(
+            [39.92814, -75.16515],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_392e0190679b48168593d7bf128ef3a4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6f4b8ba0846849afae9ad8a6c6b16d94.setIcon(icon_392e0190679b48168593d7bf128ef3a4);
+            
+    
+            var popup_869b697f6b69445980bd3a3f3f01cc6d = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_ce6d2382b56a44db8b55d4454bdabe33 = $(`<div id="html_ce6d2382b56a44db8b55d4454bdabe33" style="width: 100.0%; height: 100.0%;">Available Bikes: 14</div>`)[0];
+                popup_869b697f6b69445980bd3a3f3f01cc6d.setContent(html_ce6d2382b56a44db8b55d4454bdabe33);
+            
+
+            marker_6f4b8ba0846849afae9ad8a6c6b16d94.bindPopup(popup_869b697f6b69445980bd3a3f3f01cc6d)
+            ;
+
+            
+        
+    
+        var marker_d8910a8f605f48829da9cd734399431d = L.marker(
+            [39.95819, -75.1782],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_75df637ae4ab4ed8a49f50f4fc4f0a8c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d8910a8f605f48829da9cd734399431d.setIcon(icon_75df637ae4ab4ed8a49f50f4fc4f0a8c);
+            
+    
+            var popup_756838d38afc4a05a6296b99e42af089 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_01ad64af56ce4008ae95f244ad535904 = $(`<div id="html_01ad64af56ce4008ae95f244ad535904" style="width: 100.0%; height: 100.0%;">Available Bikes: 3</div>`)[0];
+                popup_756838d38afc4a05a6296b99e42af089.setContent(html_01ad64af56ce4008ae95f244ad535904);
+            
+
+            marker_d8910a8f605f48829da9cd734399431d.bindPopup(popup_756838d38afc4a05a6296b99e42af089)
+            ;
+
+            
+        
+    
+        var marker_91198bb4f2f74df09a465cb053556e89 = L.marker(
+            [39.97235, -75.13445],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_7893b560e3774c4dbb434574c8a469db = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_91198bb4f2f74df09a465cb053556e89.setIcon(icon_7893b560e3774c4dbb434574c8a469db);
+            
+    
+            var popup_99d92a86d3d146d1ae6393a125e86359 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_9fca72e89d3d4df2ac536e149df62283 = $(`<div id="html_9fca72e89d3d4df2ac536e149df62283" style="width: 100.0%; height: 100.0%;">Available Bikes: 5</div>`)[0];
+                popup_99d92a86d3d146d1ae6393a125e86359.setContent(html_9fca72e89d3d4df2ac536e149df62283);
+            
+
+            marker_91198bb4f2f74df09a465cb053556e89.bindPopup(popup_99d92a86d3d146d1ae6393a125e86359)
+            ;
+
+            
+        
+    
+        var marker_73394411f2ec41629fbf27cbbca91c32 = L.marker(
+            [39.95025, -75.16028],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_d70f1c39371f40df891f9336f44de046 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_73394411f2ec41629fbf27cbbca91c32.setIcon(icon_d70f1c39371f40df891f9336f44de046);
+            
+    
+            var popup_4a2b5dd4a7b34274a1898d9ef8245676 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_be653352a639478685a7bfdf22451667 = $(`<div id="html_be653352a639478685a7bfdf22451667" style="width: 100.0%; height: 100.0%;">Available Bikes: 8</div>`)[0];
+                popup_4a2b5dd4a7b34274a1898d9ef8245676.setContent(html_be653352a639478685a7bfdf22451667);
+            
+
+            marker_73394411f2ec41629fbf27cbbca91c32.bindPopup(popup_4a2b5dd4a7b34274a1898d9ef8245676)
+            ;
+
+            
+        
+    
+        var marker_ec00c4be9aa44a5ab227daabaa25ab6b = L.marker(
+            [39.95134, -75.17394],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_6b0108beed344f8d84d158a3ef0fe4e4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ec00c4be9aa44a5ab227daabaa25ab6b.setIcon(icon_6b0108beed344f8d84d158a3ef0fe4e4);
+            
+    
+            var popup_2198cc3644734cef99cff04497b02cc9 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_395220ee226145cb8c4490fe04bac465 = $(`<div id="html_395220ee226145cb8c4490fe04bac465" style="width: 100.0%; height: 100.0%;">Available Bikes: 3</div>`)[0];
+                popup_2198cc3644734cef99cff04497b02cc9.setContent(html_395220ee226145cb8c4490fe04bac465);
+            
+
+            marker_ec00c4be9aa44a5ab227daabaa25ab6b.bindPopup(popup_2198cc3644734cef99cff04497b02cc9)
+            ;
+
+            
+        
+    
+        var marker_46730067c52a4845a879512b670d6100 = L.marker(
+            [39.95382, -75.14263],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_13d48c9907864ecabcccf98188f953f6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_46730067c52a4845a879512b670d6100.setIcon(icon_13d48c9907864ecabcccf98188f953f6);
+            
+    
+            var popup_f57b69f7d7eb4fd38e76657ee372137d = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_119dc8fc0f5b4febaa50165dc7a89370 = $(`<div id="html_119dc8fc0f5b4febaa50165dc7a89370" style="width: 100.0%; height: 100.0%;">Available Bikes: 16</div>`)[0];
+                popup_f57b69f7d7eb4fd38e76657ee372137d.setContent(html_119dc8fc0f5b4febaa50165dc7a89370);
+            
+
+            marker_46730067c52a4845a879512b670d6100.bindPopup(popup_f57b69f7d7eb4fd38e76657ee372137d)
+            ;
+
+            
+        
+    
+        var marker_68fab84a109d4f26aec3e529197bc637 = L.marker(
+            [39.94426, -75.18134],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_5df68f2520d74da69ecc5da08defcf8e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_68fab84a109d4f26aec3e529197bc637.setIcon(icon_5df68f2520d74da69ecc5da08defcf8e);
+            
+    
+            var popup_c5e09f2b68e54931aa106219de84a42b = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_0368d04b1ec94a3dbd34f8a917771e58 = $(`<div id="html_0368d04b1ec94a3dbd34f8a917771e58" style="width: 100.0%; height: 100.0%;">Available Bikes: 14</div>`)[0];
+                popup_c5e09f2b68e54931aa106219de84a42b.setContent(html_0368d04b1ec94a3dbd34f8a917771e58);
+            
+
+            marker_68fab84a109d4f26aec3e529197bc637.bindPopup(popup_c5e09f2b68e54931aa106219de84a42b)
+            ;
+
+            
+        
+    
+        var marker_972cf33cc8ee42e6aa5e9b7d9f191666 = L.marker(
+            [39.89629, -75.17514],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_3d656794c94548cc8aad680b2665d13d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_972cf33cc8ee42e6aa5e9b7d9f191666.setIcon(icon_3d656794c94548cc8aad680b2665d13d);
+            
+    
+            var popup_948636a8375743b7b8ecff1e7bff427b = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_abe2618da01b4cf5930d070312778efc = $(`<div id="html_abe2618da01b4cf5930d070312778efc" style="width: 100.0%; height: 100.0%;">Available Bikes: 7</div>`)[0];
+                popup_948636a8375743b7b8ecff1e7bff427b.setContent(html_abe2618da01b4cf5930d070312778efc);
+            
+
+            marker_972cf33cc8ee42e6aa5e9b7d9f191666.bindPopup(popup_948636a8375743b7b8ecff1e7bff427b)
+            ;
+
+            
+        
+    
+        var marker_3d6565f5fafe4c42bb7f8a75e57da243 = L.marker(
+            [39.95081, -75.16953],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_eef5a4cda4c74347a2571740e3a9a4b8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3d6565f5fafe4c42bb7f8a75e57da243.setIcon(icon_eef5a4cda4c74347a2571740e3a9a4b8);
+            
+    
+            var popup_5e31c263bab4459ea1e8bbefd637d664 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_524f4c3d3fe24af3b0d871b10b3156d6 = $(`<div id="html_524f4c3d3fe24af3b0d871b10b3156d6" style="width: 100.0%; height: 100.0%;">Available Bikes: 11</div>`)[0];
+                popup_5e31c263bab4459ea1e8bbefd637d664.setContent(html_524f4c3d3fe24af3b0d871b10b3156d6);
+            
+
+            marker_3d6565f5fafe4c42bb7f8a75e57da243.bindPopup(popup_5e31c263bab4459ea1e8bbefd637d664)
+            ;
+
+            
+        
+    
+        var marker_6f0957506bd54aa08fa425d36ae0dfac = L.marker(
+            [39.88994, -75.17679],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_102089a192d244ecab503b285a145bac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6f0957506bd54aa08fa425d36ae0dfac.setIcon(icon_102089a192d244ecab503b285a145bac);
+            
+    
+            var popup_b6d375cb4a64488dacb6de4d5d0d40bc = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_283604bce9d04869b82064ebe7b5ca45 = $(`<div id="html_283604bce9d04869b82064ebe7b5ca45" style="width: 100.0%; height: 100.0%;">Available Bikes: 11</div>`)[0];
+                popup_b6d375cb4a64488dacb6de4d5d0d40bc.setContent(html_283604bce9d04869b82064ebe7b5ca45);
+            
+
+            marker_6f0957506bd54aa08fa425d36ae0dfac.bindPopup(popup_b6d375cb4a64488dacb6de4d5d0d40bc)
+            ;
+
+            
+        
+    
+        var marker_f6d8ae5a002e479f91129053bd675c6e = L.marker(
+            [39.94573, -75.19551],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_66de46b7cb0141e99de95c446ce62602 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f6d8ae5a002e479f91129053bd675c6e.setIcon(icon_66de46b7cb0141e99de95c446ce62602);
+            
+    
+            var popup_bb1d0dab7dac4aed872759c98aaa1e5b = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_a3d05b64a39a48f48b6ba97b003474fa = $(`<div id="html_a3d05b64a39a48f48b6ba97b003474fa" style="width: 100.0%; height: 100.0%;">Available Bikes: 0</div>`)[0];
+                popup_bb1d0dab7dac4aed872759c98aaa1e5b.setContent(html_a3d05b64a39a48f48b6ba97b003474fa);
+            
+
+            marker_f6d8ae5a002e479f91129053bd675c6e.bindPopup(popup_bb1d0dab7dac4aed872759c98aaa1e5b)
+            ;
+
+            
+        
+    
+        var marker_0c7707c7352b4f868c18151b6a5eded7 = L.marker(
+            [39.95169, -75.15888],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_2d992737ab504580aa62a3381061438f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0c7707c7352b4f868c18151b6a5eded7.setIcon(icon_2d992737ab504580aa62a3381061438f);
+            
+    
+            var popup_ad1e27177ff843ecb875a29684439de5 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_a850f43fa35b4568bcb680dc4daa064e = $(`<div id="html_a850f43fa35b4568bcb680dc4daa064e" style="width: 100.0%; height: 100.0%;">Available Bikes: 4</div>`)[0];
+                popup_ad1e27177ff843ecb875a29684439de5.setContent(html_a850f43fa35b4568bcb680dc4daa064e);
+            
+
+            marker_0c7707c7352b4f868c18151b6a5eded7.bindPopup(popup_ad1e27177ff843ecb875a29684439de5)
+            ;
+
+            
+        
+    
+        var marker_6d65af2fe14441e6bb136ea045056135 = L.marker(
+            [39.89307, -75.17168],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_142b7f76ed16413aa7000fee35af9ed7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6d65af2fe14441e6bb136ea045056135.setIcon(icon_142b7f76ed16413aa7000fee35af9ed7);
+            
+    
+            var popup_84d8de820e52402b9bd50eaa955bfc36 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_307937036e944a299c53b342e73c4d01 = $(`<div id="html_307937036e944a299c53b342e73c4d01" style="width: 100.0%; height: 100.0%;">Available Bikes: 2</div>`)[0];
+                popup_84d8de820e52402b9bd50eaa955bfc36.setContent(html_307937036e944a299c53b342e73c4d01);
+            
+
+            marker_6d65af2fe14441e6bb136ea045056135.bindPopup(popup_84d8de820e52402b9bd50eaa955bfc36)
+            ;
+
+            
+        
+    
+        var marker_fffbd6f9b3b04ac593a25de1fd57a339 = L.marker(
+            [39.95725, -75.17232],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_41cf383ffbd44063a2f23622705696b0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fffbd6f9b3b04ac593a25de1fd57a339.setIcon(icon_41cf383ffbd44063a2f23622705696b0);
+            
+    
+            var popup_95160710d79e4713951e53a7526e9ef6 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_6bc9a88600e54392bfb3e603f724eaf9 = $(`<div id="html_6bc9a88600e54392bfb3e603f724eaf9" style="width: 100.0%; height: 100.0%;">Available Bikes: 11</div>`)[0];
+                popup_95160710d79e4713951e53a7526e9ef6.setContent(html_6bc9a88600e54392bfb3e603f724eaf9);
+            
+
+            marker_fffbd6f9b3b04ac593a25de1fd57a339.bindPopup(popup_95160710d79e4713951e53a7526e9ef6)
+            ;
+
+            
+        
+    
+        var marker_9a65a3423c5749efa15525ae361852b2 = L.marker(
+            [39.90471, -75.1734],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_9387c13bf679421b9e92c6f4d00be862 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9a65a3423c5749efa15525ae361852b2.setIcon(icon_9387c13bf679421b9e92c6f4d00be862);
+            
+    
+            var popup_501e19deb1824e38b7f2646167efcfdf = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_136a7b08aab04fe2af2743d45d94e294 = $(`<div id="html_136a7b08aab04fe2af2743d45d94e294" style="width: 100.0%; height: 100.0%;">Available Bikes: 20</div>`)[0];
+                popup_501e19deb1824e38b7f2646167efcfdf.setContent(html_136a7b08aab04fe2af2743d45d94e294);
+            
+
+            marker_9a65a3423c5749efa15525ae361852b2.bindPopup(popup_501e19deb1824e38b7f2646167efcfdf)
+            ;
+
+            
+        
+    
+        var marker_09aad61fc8f648fdbbdf7a47a3afa30c = L.marker(
+            [39.94892, -75.16991],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_7dd3528bb22940b7ab4c540e602a21b9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_09aad61fc8f648fdbbdf7a47a3afa30c.setIcon(icon_7dd3528bb22940b7ab4c540e602a21b9);
+            
+    
+            var popup_d0d9599d388d4e57965496264cfd018b = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_0439c230dd564017835ee060fb30acc7 = $(`<div id="html_0439c230dd564017835ee060fb30acc7" style="width: 100.0%; height: 100.0%;">Available Bikes: 5</div>`)[0];
+                popup_d0d9599d388d4e57965496264cfd018b.setContent(html_0439c230dd564017835ee060fb30acc7);
+            
+
+            marker_09aad61fc8f648fdbbdf7a47a3afa30c.bindPopup(popup_d0d9599d388d4e57965496264cfd018b)
+            ;
+
+            
+        
+    
+        var marker_6bc73c6bbe944fe2b75bf6a2c42fd82b = L.marker(
+            [39.96207, -75.14111],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_f425c97dd6a0408e8f744d39b39c5c0f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6bc73c6bbe944fe2b75bf6a2c42fd82b.setIcon(icon_f425c97dd6a0408e8f744d39b39c5c0f);
+            
+    
+            var popup_932833323c264e9b8d595210d0062ef0 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_acfe7ae5055240d79b79358ba48c57a2 = $(`<div id="html_acfe7ae5055240d79b79358ba48c57a2" style="width: 100.0%; height: 100.0%;">Available Bikes: 10</div>`)[0];
+                popup_932833323c264e9b8d595210d0062ef0.setContent(html_acfe7ae5055240d79b79358ba48c57a2);
+            
+
+            marker_6bc73c6bbe944fe2b75bf6a2c42fd82b.bindPopup(popup_932833323c264e9b8d595210d0062ef0)
+            ;
+
+            
+        
+    
+        var marker_c46dfad0cabd4d918cbaafe061a9cad9 = L.marker(
+            [39.9541, -75.16965],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_04fd1ab8bf964cdbb4e2c13bc3638877 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c46dfad0cabd4d918cbaafe061a9cad9.setIcon(icon_04fd1ab8bf964cdbb4e2c13bc3638877);
+            
+    
+            var popup_d96e8a64b63145578563a1091ab5393d = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_ab6f4973e0934fa8bb9717eaf5c43441 = $(`<div id="html_ab6f4973e0934fa8bb9717eaf5c43441" style="width: 100.0%; height: 100.0%;">Available Bikes: 3</div>`)[0];
+                popup_d96e8a64b63145578563a1091ab5393d.setContent(html_ab6f4973e0934fa8bb9717eaf5c43441);
+            
+
+            marker_c46dfad0cabd4d918cbaafe061a9cad9.bindPopup(popup_d96e8a64b63145578563a1091ab5393d)
+            ;
+
+            
+        
+    
+        var marker_9be1ed7d61144acb961482a05d7f1370 = L.marker(
+            [39.98717, -75.17477],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_091e056660c7430aaa1df826272b36b4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9be1ed7d61144acb961482a05d7f1370.setIcon(icon_091e056660c7430aaa1df826272b36b4);
+            
+    
+            var popup_9b387c71f3bd47b4b96b81b45abfac6f = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_8ea01485bd944ccc98f53692128b0405 = $(`<div id="html_8ea01485bd944ccc98f53692128b0405" style="width: 100.0%; height: 100.0%;">Available Bikes: 4</div>`)[0];
+                popup_9b387c71f3bd47b4b96b81b45abfac6f.setContent(html_8ea01485bd944ccc98f53692128b0405);
+            
+
+            marker_9be1ed7d61144acb961482a05d7f1370.bindPopup(popup_9b387c71f3bd47b4b96b81b45abfac6f)
+            ;
+
+            
+        
+    
+        var marker_faa2581f615646759025ff04e26dab00 = L.marker(
+            [39.92083, -75.17033],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_a8ecbab333bb49c993e6958afb98d101);
+        
+    
+
+                var icon_8348b3b3c5f14cffa6380ca7ad16762f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_faa2581f615646759025ff04e26dab00.setIcon(icon_8348b3b3c5f14cffa6380ca7ad16762f);
+            
+    
+            var popup_ac95e5aac5884a6cac8d9371321af842 = L.popup({maxWidth: '120'
+            
+            });
+
+            
+                var html_36ed1435c6b14685801fbdbd1c843bec = $(`<div id="html_36ed1435c6b14685801fbdbd1c843bec" style="width: 100.0%; height: 100.0%;">Available Bikes: 13</div>`)[0];
+                popup_ac95e5aac5884a6cac8d9371321af842.setContent(html_36ed1435c6b14685801fbdbd1c843bec);
+            
+
+            marker_faa2581f615646759025ff04e26dab00.bindPopup(popup_ac95e5aac5884a6cac8d9371321af842)
+            ;
+
+            
+        
+</script>
